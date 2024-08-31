@@ -16,5 +16,7 @@
 
 #### Rechner und Netze
 
+- [Netzwerke](./Netzwerke/Netzwerke.ipynb) - [Aufgaben](./Netzwerke/Filius_Aufgaben.ipynb)
+
 
 #### Informationsgesellschaft und Datensicherheit
