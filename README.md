@@ -1,9 +1,5 @@
 ## Brückenkurs
 
-#### Python
-
-- [Grundlagen](./Python/Grundlagen/) - [Lösungen](./Python/Grundlagen_sol/)
-
 
 #### Daten und Codierung
 
