@@ -20,7 +20,7 @@
 
 - [Collatz-, Pledge-, Euklidscher-Algorithmus, Sieb des Eratosthenes](./Algorithmus/algorithmus.ipynb)
 
-- [Einige Algorithmen mit Blockly]
+- [Einige Algorithmen mit Blockly](./Algorithmus/algorithmenMitBlockly.md)
 
 - [Lineare und Binäre Suche]
 
