@@ -22,7 +22,7 @@
 
 - [Collatz-, Pledge-, Euklidscher-Algorithmus, Sieb des Eratosthenes](./Algorithmus/algorithmus.ipynb) - [Aufgaben](./Algorithmus/Aufgaben/aufgaben.pdf) - [Lösungen](./Algorithmus/Aufgaben/aufgaben_loes.pdf)
 
-- [Durchlaufen einer Liste, lineare Suche](./LineareSuche/lineareSuche.ipynb)
+- [Durchlaufen einer Liste, lineare Suche](./LineareSuche/lineareSuche.ipynb) - [Aufgaben](./LineareSuche/Aufgaben/aufgaben.pdf) - [Lösungen](./LineareSuche/Aufgaben/aufgaben_loes.pdf)
 
 - [Binäre Suche](./BinaereSuche/binaereSuche.ipynb)
 

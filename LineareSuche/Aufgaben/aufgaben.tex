@@ -64,18 +64,26 @@ rightmargin=1cm]{infobox}
   \vbox{\hrule width#1}%
   \hbox{\vrule height.3ex}}
 
-\newcommand{\klaubez}{Aufgaben zu Algorithmus}
+\newcommand{\klaubez}{Aufgaben zur linearen Suche}
 \firstpageheader{Informatik }{\klaubez} {\thepage /\numpages}
 \runningheader{Informatik }{\klaubez} {\thepage /\numpages}
 \newcommand{\pfad}{c:/MyData/07_Kurse/Kursaufgaben}
 %-------------------------------------------------------------------
-\printanswers
+%\printanswers
 %-------------------------------------------------------------------
 
 \begin{questions}
+\input{\pfad/Algorithmus/durchlaufen_01}
+\input{\pfad/Algorithmus/durchlaufen_02}
+\input{\pfad/Algorithmus/durchlaufen_03}
+\newpage
 \input{\pfad/Algorithmus/lineareSuche_01}
 \input{\pfad/Algorithmus/lineareSuche_02}
-\input{\pfad/Algorithmus/binaereSuche_01}
+\input{\pfad/Algorithmus/lineareSuche_03}
+\newpage
+\input{\pfad/Algorithmus/lineareSuche_04}
+\input{\pfad/Algorithmus/lineareSuche_05}
+ 
 
 
 
