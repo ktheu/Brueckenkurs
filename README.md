@@ -20,7 +20,7 @@
 
 - [Collatz-, Pledge-, Euklidscher-Algorithmus, Sieb des Eratosthenes](./Algorithmus/algorithmus.ipynb)
 
-- [Lineare und Binäre Suche]
+- [Lineare und Binäre Suche](./Algorithmus/lineareSuche.ipynb)
 
 - [Einfache Sortieralgorithmen]
 
