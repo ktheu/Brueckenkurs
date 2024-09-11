@@ -20,9 +20,11 @@
 
 - [Collatz-, Pledge-, Euklidscher-Algorithmus, Sieb des Eratosthenes](./Algorithmus/algorithmus.ipynb) - [Aufgaben](./Algorithmus/Aufgaben/aufgaben.pdf) - [Lösungen](./Algorithmus/Aufgaben/aufgaben_loes.pdf)
 
-- [Lineare und Binäre Suche](./Algorithmus/lineareSuche.ipynb)
+- [Durchlaufen einer Liste, lineare Suche](./LineareSuche/lineareSuche.ipynb)
 
-- [Einfache Sortieralgorithmen](./Algorithmus/sort.ipynb)
+- [Binäre Suche](./BinaereSuche/binaereSuche.ipynb)
+
+- [Einfache Sortieralgorithmen](./Sort/sort.ipynb)
 
 
 #### Rechner und Netze
