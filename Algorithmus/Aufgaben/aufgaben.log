@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.19)  2 AUG 2024 07:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.19)  11 SEP 2024 08:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -861,6 +861,7 @@ e
 (c:/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 ))
+(c:/MyData/07_Kurse/Kursaufgaben/Algorithmus/collatz_falsch_01.tex)
 (c:/MyData/07_Kurse/Kursaufgaben/Algorithmus/pledge_01.tex
 <c:/MyData/07_Kurse/Kursaufgaben/Algorithmus/pledge_01.png, id=4, 409.53pt x 18
 4.89075pt>
@@ -879,45 +880,31 @@ Package pdftex.def Info: c:/MyData/07_Kurse/Kursaufgaben/Algorithmus/pledge_01L
 .png  used on input line 9.
 (pdftex.def)             Requested size: 176.79636pt x 85.35826pt.
 )
-(c:/MyData/07_Kurse/Kursaufgaben/Algorithmus/euklid_klassisch_01.tex)
-(c:/MyData/07_Kurse/Kursaufgaben/Algorithmus/euklid_modern_01.tex) [1{c:/texliv
-e/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+(c:/MyData/07_Kurse/Kursaufgaben/Algorithmus/euklid_klassisch_01.tex) [1{c:/tex
+live/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
  <c:/MyData/07_Kurse/Kursaufgaben/Algorithmus/pledge_01.png>]
-(c:/MyData/07_Kurse/Kursaufgaben/Algorithmus/eratosthenes_01.tex)
-(c:/MyData/07_Kurse/Kursaufgaben/Algorithmus/lineareSuche_01.tex)
-(c:/MyData/07_Kurse/Kursaufgaben/Algorithmus/binaereSuche_01.tex
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 6
-.
-
-(c:/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)) [2]
-This exam contains 7 questions with 0 parts, 0 subparts, and 0 subsubparts.
-This exam has a total of 22 points.
+(c:/MyData/07_Kurse/Kursaufgaben/Algorithmus/euklid_modern_01.tex)
+(c:/MyData/07_Kurse/Kursaufgaben/Algorithmus/eratosthenes_01.tex) [2]
+This exam contains 6 questions with 0 parts, 0 subparts, and 0 subsubparts.
+This exam has a total of 18 points.
 This exam has a total of 0 bonus points.
 (./aufgaben.aux) ) 
 Here is how much of TeX's memory you used:
- 20248 strings out of 478542
- 369782 string characters out of 5854402
- 926828 words of memory out of 5000000
- 37805 multiletter control sequences out of 15000+600000
- 408299 words of font info for 36 fonts, out of 8000000 for 9000
+ 20193 strings out of 478542
+ 368500 string characters out of 5854402
+ 909829 words of memory out of 5000000
+ 37761 multiletter control sequences out of 15000+600000
+ 405733 words of font info for 30 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,10n,89p,471b,1323s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super
--t1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
-c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texliv
-e/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/tex
-mf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2021/texmf-dist/fo
-nts/type1/public/cm-super/sfrm0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/
-public/cm-super/sfrm1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-
-super/sfti1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt
-1000.pfb>
-Output written on aufgaben.pdf (2 pages, 136577 bytes).
+-t1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c
+:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on aufgaben.pdf (2 pages, 50522 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 29 PDF objects out of 1000 (max. 8388607)
+ 17 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

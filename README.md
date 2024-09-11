@@ -18,7 +18,7 @@
 
 #### Algorithmen
 
-- [Collatz-, Pledge-, Euklidscher-Algorithmus, Sieb des Eratosthenes](./Algorithmus/algorithmus.ipynb)
+- [Collatz-, Pledge-, Euklidscher-Algorithmus, Sieb des Eratosthenes](./Algorithmus/algorithmus.ipynb) - [Aufgaben](./Algorithmus/Aufgaben/aufgaben.pdf) - [Lösungen](./Algorithmus/Aufgaben/aufgaben_loes.pdf)
 
 - [Lineare und Binäre Suche](./Algorithmus/lineareSuche.ipynb)
 
