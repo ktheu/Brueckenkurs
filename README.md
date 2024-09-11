@@ -1,5 +1,7 @@
 ## Brückenkurs
 
+- [Python-Schnipsel](schnipsel.ipynb)
+
 
 #### Daten und Codierung
 
