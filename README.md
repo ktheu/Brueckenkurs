@@ -22,7 +22,7 @@
 
 - [Lineare und Binäre Suche](./Algorithmus/lineareSuche.ipynb)
 
-- [Einfache Sortieralgorithmen]
+- [Einfache Sortieralgorithmen](./Algorithmus/sort.ipynb)
 
 
 #### Rechner und Netze
