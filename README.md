@@ -24,7 +24,7 @@
 
 - [Durchlaufen einer Liste, lineare Suche](./LineareSuche/lineareSuche.ipynb) - [Aufgaben](./LineareSuche/Aufgaben/aufgaben.pdf) - [Lösungen](./LineareSuche/Aufgaben/aufgaben_loes.pdf)
 
-- [Binäre Suche](./BinaereSuche/binaereSuche.ipynb)
+- [Binäre Suche](./BinaereSuche/binaereSuche.ipynb) -  [Aufgaben](./BinaereSuche/Aufgaben/aufgaben.pdf) - [Lösungen](./BinaereSuche/Aufgaben/aufgaben_loes.pdf)
 
 - [Einfache Sortieralgorithmen](./Sort/sort.ipynb)
 
