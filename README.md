@@ -1,7 +1,8 @@
 ## Brückenkurs
 
-- [Python-Schnipsel](schnipsel.ipynb)
+Termin für die Klassenarbeit: 5.12.2024
 
+- [Python-Schnipsel](schnipsel.ipynb)
 
 #### Daten und Codierung
 
