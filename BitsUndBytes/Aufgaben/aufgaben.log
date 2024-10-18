@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.19)  26 SEP 2024 13:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.19)  18 OCT 2024 11:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -880,8 +880,9 @@ File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 (c:/MyData/07_Kurse/Kursaufgaben/BitsUndBytes/dez2hex_02.tex)
 (c:/MyData/07_Kurse/Kursaufgaben/BitsUndBytes/dez2okt_01.tex)
 (c:/MyData/07_Kurse/Kursaufgaben/BitsUndBytes/dez2okt_02.tex) [2]
-This exam contains 11 questions with 0 parts, 0 subparts, and 0 subsubparts.
-This exam has a total of 22 points.
+(c:/MyData/07_Kurse/Kursaufgaben/BitsUndBytes/codierung_01.tex) [3]
+This exam contains 12 questions with 0 parts, 0 subparts, and 0 subsubparts.
+This exam has a total of 24 points.
 This exam has a total of 0 bonus points.
 
 Class exam Warning: Point totals have changed. Rerun to get point totals right.
@@ -893,10 +894,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 20268 strings out of 478542
- 370420 string characters out of 5854402
+ 20282 strings out of 478542
+ 370859 string characters out of 5854402
  914829 words of memory out of 5000000
- 37818 multiletter control sequences out of 15000+600000
+ 37829 multiletter control sequences out of 15000+600000
  406500 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,10n,89p,471b,1335s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -908,10 +909,10 @@ pe1/public/cm-super/sfbx1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public
 /cm-super/sfrm0800.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/
 sfrm1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt1000.p
 fb>
-Output written on aufgaben.pdf (2 pages, 127858 bytes).
+Output written on aufgaben.pdf (3 pages, 130674 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

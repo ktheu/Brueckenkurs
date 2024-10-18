@@ -2,3 +2,17 @@
 work 
 notizen.md
 tagebuch 
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.gz
+*.toc
+*.vrb
+*.check.js
+.idea/workspace.xml
+.idea/workspace.xml
+*.code-workspace
+*Untitled*
+test.py
