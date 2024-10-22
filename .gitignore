@@ -11,6 +11,7 @@ tagebuch
 *.toc
 *.vrb
 *.check.js
+*.synctex.gz
 .idea/workspace.xml
 .idea/workspace.xml
 *.code-workspace
