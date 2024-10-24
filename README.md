@@ -5,7 +5,7 @@ Termin für die Klassenarbeit: 5.12.2024
 
 #### Daten und Codierung
 
-- [Bits und Bytes, Zahlsysteme](./BitsUndBytes/bitsUndbytes.ipynb) - [Aufgaben](./BitsUndBytes/bitsUndbytesAufgaben.ipynb)
+- [Bits und Bytes, Zahlsysteme](./BitsUndBytes/bitsUndbytes.ipynb) - [Aufgaben](./BitsUndBytes/Aufgaben/aufgaben.pdf) - [Lösungen](./BitsUndBytes/Aufgaben/aufgaben_loes.pdf)
 
 - [Codierung von Zeichen](./Unicode/unicode.ipynb) - [Aufgaben](./Unicode/Aufgaben/aufgaben.pdf) - [Lösungen](./Unicode/Aufgaben/aufgaben_loes.pdf)
  
