@@ -13,7 +13,7 @@ Termin für die Klassenarbeit: 5.12.2024
 
 - [Fehlererkennende Codierungen](./Codierungen/codierungen.ipynb) - [Aufgaben](./Codierungen/codierungen_aufgaben.ipynb)
 
-- [Digitalisierung von Bildern](./Digitalisierung_Bilder/digi_bild.ipynb) - [Aufgaben](./Digitalisierung_Bilder/digi_bild_aufgaben.ipynb)
+- [Digitalisierung von Bildern](./Digitalisierung_Bilder/digi_bild.ipynb) - [Aufgaben](./Digitalisierung_Bilder/Aufgaben/aufgaben.pdf) -  [Lösungen](./Digitalisierung_Bilder/Aufgaben/aufgaben_loes.pdf)
 
 - [Digitalisierung von Audio](./Digitalisierung_Audio/digi_audio.ipynb) - [Aufgaben](./Digitalisierung_Audio/digi_audio_aufgaben.ipynb)
 
