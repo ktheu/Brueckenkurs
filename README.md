@@ -11,7 +11,7 @@ Termin für die Klassenarbeit: 5.12.2024
  
 - [Huffman-Algorithmus](./Huffman/huffman.ipynb) - [Aufgaben](./Huffman/Aufgaben/aufgaben.pdf) - [Lösungen](./Huffman/Aufgaben/aufgaben_loes.pdf)
 
-- [Fehlererkennende Codierungen](./Codierungen/codierungen.ipynb) - [Aufgaben](./Codierungen/codierungen_aufgaben.ipynb)
+- [Fehlererkennende Codierungen](./Codierungen/codierungen.ipynb) - [Aufgaben](./Codierungen/Aufgaben/aufgaben.pdf)  -  [Loesungen](./Codierungen/Aufgaben/aufgaben_loes.pdf)
 
 - [Digitalisierung von Bildern](./Digitalisierung_Bilder/digi_bild.ipynb) - [Aufgaben](./Digitalisierung_Bilder/Aufgaben/aufgaben.pdf) -  [Lösungen](./Digitalisierung_Bilder/Aufgaben/aufgaben_loes.pdf)
 
