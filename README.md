@@ -29,9 +29,9 @@ Termin für die Klassenarbeit: 5.12.2024
 - [Einfache Sortieralgorithmen](./Sort/sort.ipynb)
 
 
-#### Rechner und Netze
+#### Rechnernetze
 
-- [Netzwerke](./Netzwerke/Netzwerke.ipynb) - [Aufgaben](./Netzwerke/Filius_Aufgaben.ipynb)
+- [Rechnernetze](./Rechnernetze/Rechnernetze.ipynb) - [Aufgaben](./Rechnernetze/Filius_Aufgaben.ipynb)
 
 
 #### Informationsgesellschaft und Datensicherheit
