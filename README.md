@@ -31,7 +31,7 @@ Termin für die Klassenarbeit: 5.12.2024
 
 #### Rechnernetze
 
-- [Rechnernetze](./Rechnernetze/Rechnernetze.ipynb) - [Aufgaben](./Rechnernetze/Filius_Aufgaben.ipynb)
+- [Rechnernetze](./Rechnernetze/Rechnernetze.ipynb) - [Aufgaben](./Rechnernetze/aufgaben.pdf) - [Lösungen](./Rechnernetze/aufgaben_loes.pdf)
 
 
 #### Informationsgesellschaft und Datensicherheit
