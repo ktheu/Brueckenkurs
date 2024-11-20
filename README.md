@@ -9,7 +9,6 @@ Termin für die Klassenarbeit: 5.12.2024
 
 - [Zweierkomplement](./Zweierkomplement/zweierkomplement.ipynb) - [Aufgaben](./Zweierkomplement/aufgaben.pdf) - [Lösungen](./Zweierkomplement/aufgaben_loes.pdf)
 
-
 - [Codierung von Zeichen](./Unicode/unicode.ipynb) - [Aufgaben](./Unicode/Aufgaben/aufgaben.pdf) - [Lösungen](./Unicode/Aufgaben/aufgaben_loes.pdf)
  
 - [Huffman-Algorithmus](./Huffman/huffman.ipynb) - [Aufgaben](./Huffman/Aufgaben/aufgaben.pdf) - [Lösungen](./Huffman/Aufgaben/aufgaben_loes.pdf)
