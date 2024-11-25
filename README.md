@@ -28,7 +28,9 @@ Termin für die Klassenarbeit: 5.12.2024
 
 - [Binäre Suche](./BinaereSuche/binaereSuche.ipynb) -  [Aufgaben](./BinaereSuche/Aufgaben/aufgaben.pdf) - [Lösungen](./BinaereSuche/Aufgaben/aufgaben_loes.pdf)
 
-- [Einfache Sortieralgorithmen](./Sort/sort.ipynb)
+- [Einfache Sortieralgorithmen](./Einfaches_Sort/einfachesSort.ipynb) -
+  [Aufgaben](./Einfaches_Sort/Aufgaben/aufgaben.pdf) - 
+  [Lösungen](./Einfaches_Sort/Aufgaben/aufgaben_loes.pdf)
 
 
 #### Rechnernetze
