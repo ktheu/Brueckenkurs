@@ -1,7 +1,5 @@
 ## Brückenkurs
 
-Termin für die Klassenarbeit: 5.12.2024
-
 
 #### Daten und Codierung
 
@@ -41,3 +39,8 @@ Termin für die Klassenarbeit: 5.12.2024
 #### Informationsgesellschaft und Datensicherheit
 
 - [Kryptologie](./Kryptologie/kryptologie.ipynb) - [Aufgaben](./Kryptologie/Aufgaben/aufgaben.pdf) - [Lösungen](./Kryptologie/Aufgaben/aufgaben_loes.pdf)
+
+
+----------------------
+
+[Klassenarbeit](./2024-25-Brue_1-A_loes_J10.pdf)
