@@ -1,5 +1,7 @@
 ## Brückenkurs
 
+Klassenarbeit: 22.5.2025
+
 
 #### Daten und Codierung
 
