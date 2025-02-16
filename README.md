@@ -32,6 +32,9 @@ Klassenarbeit: 22.5.2025
   [Aufgaben](./Einfaches_Sort/aufgaben.pdf) - 
   [Lösungen](./Einfaches_Sort/aufgaben_loes.pdf)
 
+- [Random](https://github.com/ktheu/PythonThemen/blob/main/zufall/random.ipynb) - 
+  [Zufallsexperimente](https://github.com/ktheu/PythonThemen/blob/main/zufall/simulation.ipynb) 
+
 
 #### Rechnernetze
 
