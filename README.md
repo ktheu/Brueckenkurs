@@ -44,6 +44,8 @@ Klassenarbeit: 22.5.2025
 - [Random](https://github.com/ktheu/PythonThemen/blob/main/zufall/random.ipynb) - 
   [Zufallsexperimente](https://github.com/ktheu/PythonThemen/blob/main/zufall/simulation.ipynb) 
 
+- [Fehler](https://github.com/ktheu/PythonThemen/blob/main/fehler/fehler.ipynb) 
+
 
 #### Rechnernetze
 
