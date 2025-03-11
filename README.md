@@ -9,7 +9,9 @@ Klassenarbeit: 22.5.2025
 
 - [Zweierkomplement](./Zweierkomplement/zweierkomplement.ipynb) - [Aufgaben](./Zweierkomplement/aufgaben.pdf) - [Lösungen](./Zweierkomplement/aufgaben_loes.pdf)
 
-- [Codierung von Zeichen](./Unicode/unicode.ipynb) - [Aufgaben](./Unicode/Aufgaben/aufgaben.pdf) - [Lösungen](./Unicode/Aufgaben/aufgaben_loes.pdf)
+- [ASCII, Unicode, UTF-8](https://github.com/ktheu/InfoKurs/blob/gh-pages/Unicode/unicode.ipynb) -
+[Aufgaben](https://github.com/ktheu/InfoKurs/blob/gh-pages/Unicode/aufgaben.pdf) - 
+[Lösungen](https://github.com/ktheu/InfoKurs/blob/gh-pages/Unicode/aufgaben_loes.pdf)
  
 - [Huffman-Algorithmus](./Huffman/huffman.ipynb) - [Aufgaben](./Huffman/Aufgaben/aufgaben.pdf) - [Lösungen](./Huffman/Aufgaben/aufgaben_loes.pdf)
 
