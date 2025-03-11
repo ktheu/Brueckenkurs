@@ -13,7 +13,8 @@ Klassenarbeit: 22.5.2025
 [Aufgaben](https://github.com/ktheu/InfoKurs/blob/gh-pages/Unicode/aufgaben.pdf) - 
 [Lösungen](https://github.com/ktheu/InfoKurs/blob/gh-pages/Unicode/aufgaben_loes.pdf)
  
-- [Huffman-Algorithmus](./Huffman/huffman.ipynb) - [Aufgaben](./Huffman/Aufgaben/aufgaben.pdf) - [Lösungen](./Huffman/Aufgaben/aufgaben_loes.pdf)
+- [Huffman-Algorithmus](https://github.com/ktheu/InfoKurs/blob/gh-pages/Huffman/huffman.ipynb) -
+[Aufgaben](https://github.com/ktheu/InfoKurs/blob/gh-pages/Huffman/aufgaben.pdf) - [Lösungen](https://github.com/ktheu/InfoKurs/blob/gh-pages/Huffman/aufgaben_loes.pdf)
 
 - [Fehlererkennende Codierungen](./Codierungen/codierungen.ipynb) - [Aufgaben](./Codierungen/Aufgaben/aufgaben.pdf)  -  [Loesungen](./Codierungen/Aufgaben/aufgaben_loes.pdf)
 
