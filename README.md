@@ -35,8 +35,8 @@ Klassenarbeit: 22.5.2025
 - [Speicheradressen](https://github.com/ktheu/Infokurs/blob/gh-pages/speicheradressen/speicheradressen.ipynb) -
 [Aufgaben](https://github.com/ktheu/Infokurs/blob/gh-pages/speicheradressen/aufgaben.pdf) - [Lösungen](https://github.com/ktheu/Infokurs/blob/gh-pages/speicheradressen/aufgaben_loes.pdf)
 
-- [Veränderbarkeit](https://github.com/ktheu/PythonThemen/blob/main/mutable/mutable.ipynb) -
-[Aufgaben](https://github.com/ktheu/PythonThemen/blob/main/mutable/aufgaben.pdf) - [Lösungen](https://github.com/ktheu/PythonThemen/blob/main/mutable/aufgaben_loes.pdf)
+- [Veränderbarkeit](https://github.com/ktheu/Infokurs/blob/gh-pages/Veraenderbarkeit/veraenderbarkeit.ipynb) -
+[Aufgaben](https://github.com/ktheu/Infokurs/blob/gh-pages/Veraenderbarkeit/aufgaben.pdf) - [Lösungen](https://github.com/ktheu/Infokurs/blob/gh-pages/Veraenderbarkeit/aufgaben_loes.pdf)
 
 - [Binäre Suche](./BinaereSuche/binaereSuche.ipynb) -  [Aufgaben](./BinaereSuche/Aufgaben/aufgaben.pdf) - [Lösungen](./BinaereSuche/Aufgaben/aufgaben_loes.pdf)
 
