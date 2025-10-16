@@ -1,6 +1,6 @@
 ## Brückenkurs
 
-<!-- Klassenarbeit: 22.5.2025 -->
+Klassenarbeit: 28.11.2025
 
 
 #### Daten und Codierung
@@ -62,5 +62,5 @@
 
 
 ----------------------
-<!-- 
-[Klassenarbeit](./2024-25-Brue_2_loes.pdf) -->
+
+- [Tagebuch](./tagebuch.md)
