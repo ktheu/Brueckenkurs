@@ -1,4 +1,4 @@
-## Brückenkurs
+
 
 Klassenarbeit: 28.11.2025
 
