@@ -68,4 +68,8 @@ Klassenarbeit: 28.11.2025
 
 ----------------------
 
+- [Biber2024](https://wettbewerb.informatik-biber.de/quiz/4d5108316ed0c167)
+
 - [Tagebuch](https://github.com/ktheu/Brueckenkurs/blob/main/tagebuch.md)
+
+
