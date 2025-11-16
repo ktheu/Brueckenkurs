@@ -68,7 +68,7 @@ Klassenarbeit: 28.11.2025
 
 ----------------------
 
-- [Biber2024](https://wettbewerb.informatik-biber.de/quiz/4d5108316ed0c167)
+- [Klassenarbeit Muster](./musterklausur.pdf) - [Lösungen](./musterklausur_loes.pdf)
 
 - [Tagebuch](https://github.com/ktheu/Brueckenkurs/blob/main/tagebuch.md)
 
