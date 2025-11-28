@@ -7,3 +7,4 @@
 - 07.11.2025: Python Lernen - 04 Schleifen ab break und continue bis Ende, 05 Strings2 bis einschließlich Indexing, Übungen
 - 14.11.2025: Python Lernen -05 Strings2 bis einschließlich Schleifen durch Strings, Informatik-Biber
 - 21.11.2025: Übungen zur Klassenarbeit 
+- 28.11.2025: Klassenarbeit 1
