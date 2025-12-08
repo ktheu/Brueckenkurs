@@ -74,4 +74,6 @@ Klassenarbeit: 28.11.2025
  
 - [Notenschlüssel](https://notenschluessel.streamlit.app/)  
 
+- [Kurswahl Informationen](./kurswahl.md)
+
 
