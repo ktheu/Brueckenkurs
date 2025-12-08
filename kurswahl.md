@@ -22,7 +22,9 @@ Die Themenbereiche sind für Basiskurs und Leistungskurs gleich, im Leistungskur
 
 3-stündig, 2 Jahre 
 
-Informatik kann als mündliches Prüfungsfach im Abitur gewählt werden. Es kann bei der Kurswahl als zweite  Naturwissenschaft eingesetzt werden. [Video](https://youtu.be/ttIkTwmMJwQ) 
+Informatik kann als mündliches Prüfungsfach im Abitur gewählt werden. Es kann bei der Kurswahl als zweite  Naturwissenschaft eingesetzt werden.
+
+ <!-- [Video](https://youtu.be/ttIkTwmMJwQ)  -->
 
 Beispiel für Inhalte des Grundkurses Informatik in der Auswahl Infokurs.
 
