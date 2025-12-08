@@ -72,6 +72,6 @@ Klassenarbeit: 28.11.2025
 
 - [Tagebuch](https://github.com/ktheu/Brueckenkurs/blob/main/tagebuch.md) 
  
-- [Notenschlüssel](https://ktheu-notenschluessel.streamlit.app/)  
+- [Notenschlüssel](https://notenschluessel.streamlit.app/)  
 
 
