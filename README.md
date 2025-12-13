@@ -68,7 +68,7 @@ Klassenarbeit: 28.11.2025
 
 ----------------------
 
-- [Klassenarbeit Muster](./musterklausur.pdf) - [Lösungen](./musterklausur_loes.pdf) - [Klausur](./2025-26-Brue_1-A_loes.pdf) - [Klausur2](./2025-26-Brue_1-B_loes.pdf)
+- [Klassenarbeit Muster](./musterklausur.pdf) - [Lösungen](./musterklausur_loes.pdf) 
 
 - [Tagebuch](https://github.com/ktheu/Brueckenkurs/blob/main/tagebuch.md) 
  
