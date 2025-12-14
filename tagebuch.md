@@ -8,7 +8,7 @@
 - 14.11.2025: Python Lernen -05 Strings2 bis einschließlich Schleifen durch Strings, Informatik-Biber
 - 21.11.2025: Übungen zur Klassenarbeit 
 - 28.11.2025: Klassenarbeit 1
-- 06.12.2025: Bits und Bytes, Zahlsysteme - Bis vor Umrechnung Dezimalzahl in Dualzahl
+- 05.12.2025: Bits und Bytes, Zahlsysteme - Bis vor Umrechnung Dezimalzahl in Dualzahl
 - 12.12.2025: Bits und Bytes, Von Umrechnung Dezimalzahl bis Ende
 
 
