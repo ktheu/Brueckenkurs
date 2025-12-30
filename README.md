@@ -68,8 +68,6 @@ Klassenarbeit: 28.11.2025
 
 ----------------------
 
-- [Klassenarbeit Muster](./musterklausur.pdf) - [Lösungen](./musterklausur_loes.pdf) 
-
 - [Tagebuch](https://github.com/ktheu/Brueckenkurs/blob/main/tagebuch.md) 
  
 - [Notenschlüssel](https://notenschluessel.streamlit.app/)  
