@@ -26,7 +26,7 @@ Informatik kann als mündliches Prüfungsfach im Abitur gewählt werden. Es kann
 
  <!-- [Video](https://youtu.be/ttIkTwmMJwQ)  -->
 
-Beispiel für Inhalte des Grundkurses Informatik in der Auswahl Infokurs.
+Beispiele für Inhalte des Grundkurses Informatik in der Auswahl Infokurs.
 
 
 

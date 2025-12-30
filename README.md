@@ -1,8 +1,4 @@
 
-
-Klassenarbeit: 28.11.2025
-
-
 #### Python
 
 - [Python Lernen](https://ktheu.github.io/PythonLernen/)
