@@ -1,4 +1,4 @@
-### Informationen zur Kurswahl
+### Informationen zur [Kurswahl](https://menzelths.github.io/kurswahl/)
 
 ##### Themenbereiche im Informatikunterricht
 
