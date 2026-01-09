@@ -18,7 +18,7 @@ Die Themenbereiche sind für Basiskurs und Leistungskurs gleich, im Leistungskur
 [Beispielaufgabe](https://km.baden-wuerttemberg.de/fileadmin/redaktion/m-km/intern/PDF/Dateien/Gymnasium/Dokumente_Abitur/Abitur_2025/INF_ABI24_MusterFundus_V2.5.pdf) für eine schriftliche Abiturprüfung im Leistungskurs Informatik:
 
 
-##### Grundkurs Informatik
+##### Basiskurs Informatik
 
 3-stündig, 2 Jahre 
 
