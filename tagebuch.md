@@ -10,7 +10,7 @@
 - 28.11.2025: Klassenarbeit 1
 - 05.12.2025: Bits und Bytes, Zahlsysteme - Bis vor Umrechnung Dezimalzahl in Dualzahl
 - 12.12.2025: Bits und Bytes, Von Umrechnung Dezimalzahl bis Ende
-
+- 09.01.2026: Zweierkomplement und Aufgaben dazu
 
 
 
