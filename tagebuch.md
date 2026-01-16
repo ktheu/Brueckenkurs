@@ -11,6 +11,7 @@
 - 05.12.2025: Bits und Bytes, Zahlsysteme - Bis vor Umrechnung Dezimalzahl in Dualzahl
 - 12.12.2025: Bits und Bytes, Von Umrechnung Dezimalzahl bis Ende
 - 09.01.2026: Zweierkomplement und Aufgaben dazu
+- 16.01.2026: ASCII, Unicode, UTF-8 bis einschließlich Beispiel: UTF-8 Codierung des Eurozeichens
 
 
 
