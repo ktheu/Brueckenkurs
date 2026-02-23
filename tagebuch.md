@@ -13,6 +13,7 @@
 - 09.01.2026: Zweierkomplement und Aufgaben dazu
 - 16.01.2026: ASCII, Unicode, UTF-8 bis einschließlich Beispiel: UTF-8 Codierung des Eurozeichens
 - 23.01.2026: Python Lernen - 06 Listen, Übungen dazu
+- 06.02.2026: Python Lernen - 06 Listen Übungen, Probewettbewerb JWINF
 
 
 
