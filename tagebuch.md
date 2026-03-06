@@ -14,6 +14,8 @@
 - 16.01.2026: ASCII, Unicode, UTF-8 bis einschließlich Beispiel: UTF-8 Codierung des Eurozeichens
 - 23.01.2026: Python Lernen - 06 Listen, Übungen dazu
 - 06.02.2026: Python Lernen - 06 Listen Übungen, Probewettbewerb JWINF
+- 27.02.2026: Jugendwettbewerb Informatik, 1. Runde
+- 06.03.2026: Python Lernen - 07 Dicts, Übungen dazu
 
 
 
