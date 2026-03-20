@@ -16,6 +16,8 @@
 - 06.02.2026: Python Lernen - 06 Listen Übungen, Probewettbewerb JWINF
 - 27.02.2026: Jugendwettbewerb Informatik, 1. Runde
 - 06.03.2026: Python Lernen - 07 Dicts, Übungen dazu
+- 13.03.2026: Wiederholung zur Klassenarbeit 
+- 20.03.2026: Klassenarbeit 2
 
 
 
