@@ -1,5 +1,4 @@
 
-Klassenarbeit: 20.03.2026
 
 #### Python
 
