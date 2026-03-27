@@ -72,4 +72,6 @@ Klassenarbeit: 20.03.2026
 
 - [Kurswahl Informationen](./kurswahl.md)
 
+- [Klausur](./2025-26-Brue_2-A_loes.pdf)
+
 
