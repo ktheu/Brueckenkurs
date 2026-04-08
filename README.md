@@ -71,6 +71,6 @@
 
 - [Kurswahl Informationen](./kurswahl.md)
 
-- [Klausur](./2025-26-Brue_2-A_loes.pdf)
+<!-- - [Klausur](./2025-26-Brue_2-A_loes.pdf) -->
 
 
