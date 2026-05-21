@@ -19,6 +19,7 @@
 - 13.03.2026: Wiederholung zur Klassenarbeit 
 - 20.03.2026: Klassenarbeit 2
 - 27.03.2026: Rückgabe Klassenarbeit 2, Python Lernen - 08 Tuples 
-
+- 17.04.2026: Python Lernen - Funktionen, Jugendwettbewerb Informatik, 2. Runde
+- 08.05.2026: Python Lernen - Funktionen, Übungen dazu
 
 
