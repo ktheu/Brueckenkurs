@@ -21,5 +21,6 @@
 - 27.03.2026: Rückgabe Klassenarbeit 2, Python Lernen - 08 Tuples 
 - 17.04.2026: Python Lernen - Funktionen, Jugendwettbewerb Informatik, 2. Runde
 - 08.05.2026: Python Lernen - Funktionen, Übungen dazu
+- 22.05.2026: Huffman-Algorithmus, Aufgaben dazu
 
 
