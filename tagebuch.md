@@ -22,6 +22,6 @@
 - 17.04.2026: Python Lernen - Funktionen, Jugendwettbewerb Informatik, 2. Runde
 - 08.05.2026: Python Lernen - Funktionen, Übungen dazu
 - 22.05.2026: Daten und Codierung: Huffman-Algorithmus, Aufgaben dazu
-- 12.06.2026: Daten und Codierung: Hamming-Code 
+- 12.06.2026: Daten und Codierung: Fehlererkennende Codierungen, Hamming-Code 
 
 
