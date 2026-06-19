@@ -23,5 +23,6 @@
 - 08.05.2026: Python Lernen - Funktionen, Übungen dazu
 - 22.05.2026: Daten und Codierung: Huffman-Algorithmus, Aufgaben dazu
 - 12.06.2026: Daten und Codierung: Fehlererkennende Codierungen, Hamming-Code 
+- 19.06.2026: Daten und Codierung: Codierung von Bildern und Audio, Übungen dazu
 
 
