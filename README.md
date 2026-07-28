@@ -73,6 +73,10 @@
 
 - [Kurswahl Informationen](./kurswahl.md)
 
+------------------------
+
+- [Algorithmen](./BR02_Algorithmen/inhalte/inhalte.html) 
+
 <!-- - [Klausur](./2025-26-Brue_2-A_loes.pdf) -->
 
 
