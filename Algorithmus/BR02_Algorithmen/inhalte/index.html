@@ -1,0 +1,1293 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Übungsaufgaben: Algorithmen mit Python</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <style>
+      :root {
+        --accent: #2563eb;
+        --bg: #f7f8fa;
+        --card-bg: #ffffff;
+        --border: #e2e5ea;
+        --text: #1f2430;
+        --muted: #6b7280;
+        --code-bg: #f3f4f6;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family:
+          -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+      .layout {
+        display: flex;
+        max-width: 1100px;
+        margin: 0 auto;
+      }
+      nav#toc {
+        flex: 0 0 260px;
+        padding: 32px 16px;
+        position: sticky;
+        top: 0;
+        align-self: flex-start;
+        max-height: 100vh;
+        overflow-y: auto;
+      }
+      nav#toc h2 {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--muted);
+        margin: 0 0 12px;
+      }
+      nav#toc ol {
+        padding-left: 1.1em;
+        margin: 0;
+        font-size: 0.9rem;
+      }
+      nav#toc li {
+        margin-bottom: 8px;
+      }
+      nav#toc a {
+        color: var(--text);
+        text-decoration: none;
+      }
+      nav#toc a:hover {
+        color: var(--accent);
+        text-decoration: underline;
+      }
+      main {
+        flex: 1;
+        min-width: 0;
+        background: var(--card-bg);
+        padding: 40px 48px 80px;
+        border-left: 1px solid var(--border);
+        border-right: 1px solid var(--border);
+      }
+      main h1 {
+        font-size: 1.8rem;
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 12px;
+        margin-top: 0;
+      }
+      main h2 {
+        font-size: 1.35rem;
+        margin-top: 3em;
+        padding-top: 0.5em;
+        border-top: 1px solid var(--border);
+        color: var(--accent);
+      }
+      main h2:first-of-type {
+        margin-top: 2em;
+        border-top: none;
+      }
+      main h3 {
+        font-size: 1.05rem;
+        margin-top: 2em;
+        color: var(--text);
+      }
+      main hr {
+        display: none;
+      }
+      p {
+        margin: 0.9em 0;
+      }
+      code {
+        background: var(--code-bg);
+        padding: 0.15em 0.4em;
+        border-radius: 4px;
+        font-size: 0.9em;
+      }
+      pre {
+        background: var(--code-bg);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 14px 16px;
+        overflow-x: auto;
+      }
+      pre code {
+        background: none;
+        padding: 0;
+        font-size: 0.88rem;
+      }
+      details {
+        margin: 1em 0 1.5em;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 4px 16px;
+        background: #fafbfc;
+      }
+      details[open] {
+        border-color: var(--accent);
+      }
+      summary {
+        cursor: pointer;
+        font-weight: 600;
+        color: var(--accent);
+        padding: 10px 0;
+        list-style: none;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      summary::before {
+        content: "▶ ";
+        display: inline-block;
+        transition: transform 0.15s ease;
+      }
+      details[open] summary::before {
+        content: "▼ ";
+      }
+      details > *:not(summary) {
+        margin-top: 0.5em;
+      }
+      @media (max-width: 800px) {
+        .layout {
+          flex-direction: column;
+        }
+        nav#toc {
+          position: static;
+          max-height: none;
+          border-bottom: 1px solid var(--border);
+        }
+        main {
+          border-left: none;
+          border-right: none;
+          padding: 24px;
+        }
+      }
+
+      .pagenav {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 14px 48px 0;
+        font-size: 0.9rem;
+      }
+      .pagenav a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .pagenav a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 800px) {
+        .pagenav {
+          padding: 14px 24px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagenav">
+      📗 Übungsaufgaben &nbsp;|&nbsp;
+      <a href="inhalte.html">Zu den Lerninhalten →</a>
+    </div>
+
+    <!-- ============================================================
+     AB HIER: Inhalt im Markdown-Format.
+     Hier kannst du Aufgaben bearbeiten, löschen oder neue hinzufügen,
+     ohne HTML-Kenntnisse zu benötigen. Die Syntax ist normales Markdown:
+       ## Überschrift        -> Kompetenz-Abschnitt
+       ### Überschrift       -> einzelne Aufgabe
+       ```python ... ```     -> Codeblock
+       <details><summary>Lösung anzeigen</summary> ... </details>
+                             -> aufklappbare Lösung
+     ============================================================ -->
+    <script type="text/markdown" id="markdown-content">
+      # Übungsaufgaben: Algorithmen mit Python
+
+      ## Inhalt
+
+      1. [Algorithmen mit Anweisung, Bedingung, Schleife und Verzweigung implementieren](#kompetenz-1)
+      2. [Datentypen (Ganzzahl, Gleitkommazahl, Wahrheitswert, Zeichenkette) beschreiben und anwenden](#kompetenz-2)
+      3. [Logische Verknüpfungen (UND, ODER, NICHT) und Wahrheitstafeln verwenden](#kompetenz-3)
+      4. [Zufallszahlen in eigenen Programmen verwenden](#kompetenz-4)
+      5. [Unterprogramme mit Parametern und Rückgabewerten verwenden](#kompetenz-5)
+      6. [Fehlerarten (Compiler-/Laufzeitfehler, syntaktisch/semantisch) unterscheiden](#kompetenz-6)
+      7. [Vorgegebenen Code analysieren und dessen Wirkung beschreiben](#kompetenz-7)
+      8. [Anpassungen zu vorgegebenem Code implementieren](#kompetenz-8)
+      9. [Vorgegebene Programmbibliotheken sinnvoll verwenden](#kompetenz-9)
+      10. [Algorithmen entwerfen, die Benutzereingaben anfordern und auswerten](#kompetenz-10)
+      11. [Code implementieren, der Daten aus Dateien liest und in Dateien schreibt](#kompetenz-11)
+      12. [Arrays zur Speicherung und Verarbeitung von Daten verwenden](#kompetenz-12)
+      13. [Grundlegende Array-Algorithmen (Füllen, Maximumsuche, Summenbildung, Bubblesort)](#kompetenz-13)
+      14. [Strategien (Debugger, schrittweise Ausführung, Logging) anwenden](#kompetenz-14)
+
+      ---
+
+      <a id="kompetenz-1"></a>
+
+      ## 1: Algorithmen mit Anweisung, Bedingung, Schleife und Verzweigung implementieren
+
+      ### Aufgabe 1.1 (3 Punkte)
+
+      Schreibe ein Python-Programm, das in den Variablen `a` und `b` zwei Zahlen speichert
+      und mit einer Verzweigung ausgibt, ob `a` größer, kleiner oder gleich `b` ist.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      a = 5
+      b = 8
+
+      if a > b:
+          print("a ist größer")
+      elif a < b:
+          print("a ist kleiner")
+      else:
+          print("a ist gleich b")
+      ```
+
+      </details>
+
+      ### Aufgabe 1.2 (3 Punkte)
+
+      Schreibe ein Python-Programm mit einer Schleife, das die Summe aller ganzen Zahlen von 1
+      bis 100 berechnet und ausgibt.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      summe = 0
+      for i in range(1, 101):
+          summe = summe + i
+
+      print("Summe:", summe)
+      ```
+
+      </details>
+
+      ### Aufgabe 1.3 (4 Punkte)
+
+      Schreibe ein Python-Programm, das mit einer Schleife die Zahlen von 1 bis 20 ausgibt.
+      Für jede Zahl, die durch 3 teilbar ist, soll zusätzlich `"Teilbar durch 3"` ausgegeben werden.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      for i in range(1, 21):
+          print(i)
+          if i % 3 == 0:
+              print("Teilbar durch 3")
+      ```
+
+      </details>
+
+      ---
+
+      <a id="kompetenz-2"></a>
+
+      ## 2: Datentypen (Ganzzahl, Gleitkommazahl, Wahrheitswert, Zeichenkette) beschreiben und anwenden
+
+      ### Aufgabe 2.1 (2 Punkte)
+
+      Gegeben sind folgende Variablenzuweisungen in Python:
+
+      ```python
+      a = 7
+      b = 3.5
+      c = "Hallo"
+      d = True
+      ```
+
+      Gib für jede Variable den passenden Datentyp an.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      a: Ganzzahl (int)
+      b: Gleitkommazahl (float)
+      c: Zeichenkette (str)
+      d: Wahrheitswert (bool)
+      ```
+
+      </details>
+
+      ### Aufgabe 2.2 (3 Punkte)
+
+      Schreibe ein Python-Programm, das eine Zeichenkette `"42"` in eine Ganzzahl umwandelt,
+      diese um 8 erhöht und das Ergebnis als Zeichenkette wieder ausgibt (Typumwandlung).
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      text = "42"
+      zahl = int(text)
+      zahl = zahl + 8
+      ergebnis = str(zahl)
+
+      print(ergebnis)
+      ```
+
+      </details>
+
+      ### Aufgabe 2.3 (4 Punkte)
+
+      Schreibe ein Python-Programm, das je eine Variable vom Typ Ganzzahl, Gleitkommazahl,
+      Wahrheitswert und Zeichenkette anlegt, sinnvoll befüllt und mit `print()` inklusive
+      Typ (`type()`) ausgibt.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      alter = 16
+      groesse = 1.72
+      ist_schueler = True
+      name = "Lena"
+
+      print(name, type(name))
+      print(alter, type(alter))
+      print(groesse, type(groesse))
+      print(ist_schueler, type(ist_schueler))
+      ```
+
+      </details>
+
+      ---
+
+      <a id="kompetenz-3"></a>
+
+      ## 3: Logische Verknüpfungen (UND, ODER, NICHT) und Wahrheitstafeln
+
+      ### Aufgabe 3.1 (3 Punkte)
+
+      Schreibe eine Bedingung in Python, die genau dann `True` ergibt, wenn eine Zahl `x`
+      zwischen 10 und 20 liegt (jeweils einschließlich) UND gleichzeitig gerade ist.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      x = 14
+
+      if 10 <= x and x <= 20 and x % 2 == 0:
+          print("Bedingung erfüllt")
+      ```
+
+      </details>
+
+      ### Aufgabe 3.2 (4 Punkte)
+
+      Gib die Wahrheitstafel für den Ausdruck `(A or B) and not A` für alle vier
+      Kombinationen von A und B (jeweils 0 für `False` und 1 für `True`) an.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      A       B       (A or B)   not A   (A or B) and not A
+      0       0       0          1       0
+      0       1       1          1       1
+      1       0       1          0       0
+      1       1       1          0       0
+      ```
+
+      </details>
+
+      ### Aufgabe 3.3 (3 Punkte)
+
+      Schreibe ein Python-Programm, das für eine Jahreszahl `jahr` prüft, ob es sich um ein
+      Schaltjahr handelt. Ein Schaltjahr liegt vor, wenn das Jahr durch 4 teilbar ist UND
+      (nicht durch 100 teilbar ODER durch 400 teilbar ist).
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      jahr = 2024
+
+      if jahr % 4 == 0 and (jahr % 100 != 0 or jahr % 400 == 0):
+          print("Schaltjahr")
+      else:
+          print("Kein Schaltjahr")
+      ```
+
+      </details>
+
+      ---
+
+      <a id="kompetenz-4"></a>
+
+      ## 4: Zufallszahlen in eigenen Programmen verwenden
+
+      ### Aufgabe 4.1 (2 Punkte)
+
+      Schreibe ein Python-Programm, das mit dem Modul `random` eine ganze Zufallszahl
+      zwischen 1 und 6 erzeugt und ausgibt (Simulation eines Würfelwurfs).
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      import random
+
+      wurf = random.randint(1, 6)
+      print("Gewürfelt:", wurf)
+      ```
+
+      </details>
+
+      ### Aufgabe 4.2 (3 Punkte)
+
+      Schreibe ein Python-Programm, das 5-mal hintereinander eine Zufallszahl zwischen 1 und 100
+      erzeugt und alle fünf Zahlen ausgibt.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      import random
+
+      for i in range(5):
+          zahl = random.randint(1, 100)
+          print(zahl)
+      ```
+
+      </details>
+
+      ### Aufgabe 4.3 (4 Punkte)
+
+      Schreibe ein Python-Programm, das eine geheime Zufallszahl zwischen 1 und 10 erzeugt und
+      anschließend prüft, ob eine fest vorgegebene Vermutung `vermutung = 7` korrekt war.
+      Gib `"Richtig!"` oder `"Falsch!"` aus.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      import random
+
+      geheimzahl = random.randint(1, 10)
+      vermutung = 7
+
+      if vermutung == geheimzahl:
+          print("Richtig!")
+      else:
+          print("Falsch!")
+      ```
+
+      </details>
+
+      ---
+
+      <a id="kompetenz-5"></a>
+
+      ## 5: Unterprogramme mit Parametern und Rückgabewerten verwenden
+
+      ### Aufgabe 5.1 (3 Punkte)
+
+      Schreibe eine Python-Funktion `rechteck_flaeche(breite, hoehe)`, die die Fläche
+      eines Rechtecks berechnet und zurückgibt. Rufe die Funktion mit `breite = 4` und
+      `hoehe = 5` auf und gib das Ergebnis aus.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      def rechteck_flaeche(breite, hoehe):
+          return breite * hoehe
+
+      ergebnis = rechteck_flaeche(4, 5)
+      print("Fläche:", ergebnis)
+      ```
+
+      </details>
+
+      ### Aufgabe 5.2 (3 Punkte)
+
+      Schreibe eine Python-Funktion `ist_gerade(zahl)`, die einen Wahrheitswert zurückgibt,
+      je nachdem ob `zahl` gerade ist. Teste die Funktion mit drei verschiedenen Zahlen.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      def ist_gerade(zahl):
+          return zahl % 2 == 0
+
+      print(ist_gerade(4))
+      print(ist_gerade(7))
+      print(ist_gerade(10))
+      ```
+
+      </details>
+
+      ### Aufgabe 5.3 (4 Punkte)
+
+      Schreibe eine Python-Funktion `maximum(a, b, c)`, die von drei übergebenen Zahlen
+      die größte zurückgibt, ohne die eingebaute Funktion `max()` zu verwenden.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      def maximum(a, b, c):
+          groesste = a
+          if b > groesste:
+              groesste = b
+          if c > groesste:
+              groesste = c
+          return groesste
+
+      print(maximum(3, 9, 5))
+      ```
+
+      </details>
+
+      ---
+
+      <a id="kompetenz-6"></a>
+
+      ## 6: Fehlerarten (Compiler-/Laufzeitfehler, syntaktisch/semantisch) unterscheiden
+
+      ### Aufgabe 6.1 (2 Punkte)
+
+      Ordne die folgenden drei Fehler jeweils der Kategorie
+      `Compilerfehler/Laufzeitfehler`
+      und `syntaktisch/semantisch` zu:
+
+      ```python
+      (a) print("Hallo"
+      (b) zahl = 10 / 0
+      (c) durchschnitt = summe * anzahl   # sollte / statt * sein
+      ```
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      (a) fehlende Klammer: Compilerfehler, syntaktisch
+      (b) Division durch 0: Laufzeitfehler, semantisch
+          (Programm läuft, stürzt aber zur Laufzeit ab)
+      (c) falscher Operator: Laufzeitfehler, semantisch
+          (Programm läuft fehlerfrei durch, liefert aber falsches Ergebnis)
+      ```
+
+      </details>
+
+      ### Aufgabe 6.2 (3 Punkte)
+
+      Der folgende Code enthält einen syntaktischen Fehler. Finde und korrigiere ihn.
+
+      ```python
+      for i in range(10)
+          print(i)
+      ```
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      for i in range(10):
+          print(i)
+
+      # Fehler: Der Doppelpunkt am Ende der for-Zeile fehlte.
+      ```
+
+      </details>
+
+      ### Aufgabe 6.3 (3 Punkte)
+
+      Erkläre anhand eines eigenen Python-Beispiels den Unterschied zwischen einem syntaktischen
+      und einem semantischen Fehler.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      Syntaktischer Fehler (Verstoß gegen die Grammatik der Sprache):
+      x = 5
+      if x > 3
+          print("groß")
+      # Fehlender Doppelpunkt -> Programm startet gar nicht.
+
+      Semantischer Fehler (Programm läuft, tut aber inhaltlich das Falsche):
+      grundpreis = 100
+      rabatt = 0.2
+      endpreis = grundpreis + rabatt * grundpreis
+      # Sollte "-" statt "+" sein, Programm läuft fehlerfrei,
+      # liefert aber ein falsches Ergebnis.
+      ```
+
+      </details>
+
+      ---
+
+      <a id="kompetenz-7"></a>
+
+      ## 7: Vorgegebenen Code analysieren und dessen Wirkung beschreiben
+
+      ### Aufgabe 7.1 (3 Punkte)
+
+      Analysiere den folgenden Python-Code und gib an, welche Ausgabe er erzeugt.
+
+      ```python
+      summe = 0
+      for i in range(1, 6):
+          summe = summe + i
+      print(summe)
+      ```
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      Die Schleife läuft für i = 1, 2, 3, 4, 5 und addiert jeden Wert auf summe.
+      Ausgabe: 15   (1+2+3+4+5)
+      ```
+
+      </details>
+
+      ### Aufgabe 7.2 (3 Punkte)
+
+      Beschreibe in eigenen Worten, was die folgende Funktion tut.
+
+      ```python
+      def geheimnis(text):
+          ergebnis = ""
+          for zeichen in text:
+              ergebnis = zeichen + ergebnis
+          return ergebnis
+      ```
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      Die Funktion durchläuft die Zeichenkette text zeichenweise und hängt jedes
+      neue Zeichen vorne an das bisherige Ergebnis an. Dadurch wird die Zeichenkette
+      umgekehrt (Palindrom-Umkehrung), z.B. wird aus "Hallo" -> "ollaH".
+      ```
+
+      </details>
+
+      ### Aufgabe 7.3 (4 Punkte)
+
+      Bestimme, welchen Wert die Variable `x` nach Ausführung des folgenden Codes hat,
+      und begründe deine Antwort.
+
+      ```python
+      x = 1
+      for i in range(4):
+          if i % 2 == 0:
+              x = x * 2
+          else:
+              x = x + 3
+      ```
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      i=0 (gerade): x = 1*2 = 2
+      i=1 (ungerade): x = 2+3 = 5
+      i=2 (gerade): x = 5*2 = 10
+      i=3 (ungerade): x = 10+3 = 13
+
+      Ergebnis: x = 13
+      ```
+
+      </details>
+
+      ---
+
+      <a id="kompetenz-8"></a>
+
+      ## 8: Anpassungen zu vorgegebenem Code implementieren
+
+      ### Aufgabe 8.1 (3 Punkte)
+
+      Der folgende Code gibt alle Zahlen von 1 bis 10 aus. Passe den Code so an, dass nur die
+      geraden Zahlen ausgegeben werden.
+
+      ```python
+      for i in range(1, 11):
+          print(i)
+      ```
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      for i in range(1, 11):
+          if i % 2 == 0:
+              print(i)
+      ```
+
+      </details>
+
+      ### Aufgabe 8.2 (3 Punkte)
+
+      Erweitere die folgende Funktion so, dass sie zusätzlich zur Summe auch den Durchschnitt
+      der Liste `zahlen` zurückgibt (als Tupel).
+
+      ```python
+      def summe_liste(zahlen):
+          s = 0
+          for z in zahlen:
+              s = s + z
+          return s
+      ```
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      def summe_liste(zahlen):
+          s = 0
+          for z in zahlen:
+              s = s + z
+          durchschnitt = s / len(zahlen)
+          return s, durchschnitt
+
+      summe, mittel = summe_liste([2, 4, 6, 8])
+      print(summe, mittel)
+      ```
+
+      </details>
+
+      ### Aufgabe 8.3 (4 Punkte)
+
+      Der folgende Code soll prüfen, ob eine eingegebene Zahl positiv ist, tut dies aber
+      fehlerhaft. Passe den Code so an, dass er korrekt zwischen positiv, negativ und null
+      unterscheidet.
+
+      ```python
+      zahl = -3
+      if zahl > 0:
+          print("positiv")
+      print("negativ")
+      ```
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      zahl = -3
+
+      if zahl > 0:
+          print("positiv")
+      elif zahl < 0:
+          print("negativ")
+      else:
+          print("null")
+      ```
+
+      </details>
+
+      ---
+
+      <a id="kompetenz-9"></a>
+
+      ## 9: Vorgegebene Programmbibliotheken sinnvoll verwenden
+
+      ### Aufgabe 9.1 (3 Punkte)
+
+      Schreibe ein Python-Programm, das mit dem Modul `math` die Quadratwurzel von 144
+      und die Kreiszahl π (auf 4 Nachkommastellen) ausgibt.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      import math
+
+      wurzel = math.sqrt(144)
+      print("Wurzel:", wurzel)
+      print("Pi:", round(math.pi, 4))
+      ```
+
+      </details>
+
+      ### Aufgabe 9.2 (3 Punkte)
+
+      Schreibe ein Python-Programm, das mit dem Modul `datetime` das heutige Datum
+      ermittelt und ausgibt.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      import datetime
+
+      heute = datetime.date.today()
+      print("Heutiges Datum:", heute)
+      ```
+
+      </details>
+
+      ### Aufgabe 9.3 (4 Punkte)
+
+      Schreibe ein Python-Programm, das mit dem Modul `random` eine Liste mit fünf
+      zufälligen Zahlen zwischen 1 und 50 erzeugt und diese anschließend mit `sorted()`
+      aufsteigend sortiert ausgibt.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      import random
+
+      zahlen = []
+      for i in range(5):
+          zahlen.append(random.randint(1, 50))
+
+      print("Unsortiert:", zahlen)
+      print("Sortiert:", sorted(zahlen))
+      ```
+
+      </details>
+
+      ---
+
+      <a id="kompetenz-10"></a>
+
+      ## 10: Algorithmen entwerfen, die Benutzereingaben anfordern und auswerten
+
+      ### Aufgabe 10.1 (3 Punkte)
+
+      Schreibe ein Python-Programm, das den Nutzer nach seinem Alter fragt (`input()`)
+      und ausgibt, ob die Person volljährig ist (18 Jahre oder älter).
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      alter = int(input("Wie alt bist du? "))
+
+      if alter >= 18:
+          print("Du bist volljährig.")
+      else:
+          print("Du bist minderjährig.")
+      ```
+
+      </details>
+
+      ### Aufgabe 10.2 (3 Punkte)
+
+      Schreibe ein Python-Programm, das den Nutzer wiederholt nach einer Zahl fragt, bis er
+      die Zahl 0 eingibt. Anschließend soll die Summe aller eingegebenen Zahlen (außer der 0)
+      ausgegeben werden.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      summe = 0
+      eingabe = int(input("Zahl eingeben (0 zum Beenden): "))
+
+      while eingabe != 0:
+          summe = summe + eingabe
+          eingabe = int(input("Zahl eingeben (0 zum Beenden): "))
+
+      print("Summe:", summe)
+      ```
+
+      </details>
+
+      ### Aufgabe 10.3 (4 Punkte)
+
+      Schreibe einen einfachen Taschenrechner: Das Programm fragt zwei Zahlen und ein
+      Rechenzeichen (`+`, `-`, `*`, `/`) über `input()` ab
+      und gibt das Ergebnis der Berechnung aus.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      a = float(input("Erste Zahl: "))
+      op = input("Rechenzeichen (+ - * /): ")
+      b = float(input("Zweite Zahl: "))
+
+      if op == "+":
+          print(a + b)
+      elif op == "-":
+          print(a - b)
+      elif op == "*":
+          print(a * b)
+      elif op == "/":
+          print(a / b)
+      else:
+          print("Unbekanntes Rechenzeichen")
+      ```
+
+      </details>
+
+      ---
+
+      <a id="kompetenz-11"></a>
+
+      ## 11: Code implementieren, der Daten aus Dateien liest und in Dateien schreibt
+
+      ### Aufgabe 11.1 (3 Punkte)
+
+      Schreibe ein Python-Programm, das die Zeichenkette `"Hallo Welt"` in eine neue
+      Textdatei `ausgabe.txt` schreibt.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      with open("ausgabe.txt", "w") as datei:
+          datei.write("Hallo Welt")
+      ```
+
+      </details>
+
+      ### Aufgabe 11.2 (3 Punkte)
+
+      Schreibe ein Python-Programm, das den Inhalt der Datei `eingabe.txt` zeilenweise
+      einliest und jede Zeile auf der Konsole ausgibt.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      with open("eingabe.txt", "r") as datei:
+          for zeile in datei:
+              print(zeile.strip())
+      ```
+
+      </details>
+
+      ### Aufgabe 11.3 (4 Punkte)
+
+      Schreibe ein Python-Programm, das aus der Datei `zahlen.txt` (eine Zahl pro Zeile)
+      alle Zahlen einliest, deren Summe berechnet und das Ergebnis in eine neue Datei
+      `ergebnis.txt` schreibt.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      summe = 0
+
+      with open("zahlen.txt", "r") as datei:
+          for zeile in datei:
+              summe = summe + int(zeile.strip())
+
+      with open("ergebnis.txt", "w") as ausgabe:
+          ausgabe.write(str(summe))
+      ```
+
+      </details>
+
+      ---
+
+      <a id="kompetenz-12"></a>
+
+      ## 12: Arrays zur Speicherung und Verarbeitung von Daten verwenden
+
+      ### Aufgabe 12.1 (2 Punkte)
+
+      Lege eine Liste `noten` mit den Werten `[2, 3, 1, 4, 2]` an und gib das
+      erste sowie das letzte Element der Liste aus.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      noten = [2, 3, 1, 4, 2]
+
+      print("Erstes Element:", noten[0])
+      print("Letztes Element:", noten[-1])
+      ```
+
+      </details>
+
+      ### Aufgabe 12.2 (3 Punkte)
+
+      Schreibe ein Python-Programm, das eine Liste `namen = ["Anna", "Ben", "Cem"]`
+      mit einer Schleife durchläuft und jeden Namen mit einer Begrüßung ausgibt.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      namen = ["Anna", "Ben", "Cem"]
+
+      for name in namen:
+          print("Hallo,", name)
+      ```
+
+      </details>
+
+      ### Aufgabe 12.3 (4 Punkte)
+
+      Schreibe ein Python-Programm, das eine Liste `zahlen = [3, 7, 2, 9, 4]` durchläuft
+      und jede Zahl in der Liste verdoppelt (die Liste soll anschließend die verdoppelten
+      Werte enthalten).
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      zahlen = [3, 7, 2, 9, 4]
+
+      for i in range(len(zahlen)):
+          zahlen[i] = zahlen[i] * 2
+
+      print(zahlen)
+      ```
+
+      </details>
+
+      ---
+
+      <a id="kompetenz-13"></a>
+
+      ## 13: Grundlegende Array-Algorithmen (Füllen, Maximumsuche, Summenbildung, Bubblesort)
+
+      ### Aufgabe 13.1 (3 Punkte)
+
+      Schreibe ein Python-Programm, das eine leeres Liste `werte` mit den ersten 10
+      Quadratzahlen (1, 4, 9, ...) füllt und anschließend ausgibt.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      werte = []
+
+      for i in range(1, 11):
+          werte.append(i * i)
+
+      print(werte)
+      ```
+
+      </details>
+
+      ### Aufgabe 13.2 (3 Punkte)
+
+      Schreibe ein Python-Programm, das in der Liste `zahlen = [12, 45, 3, 78, 22]`
+      ohne die Funktion `max()` den größten Wert sucht und die Summe aller Werte berechnet.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      zahlen = [12, 45, 3, 78, 22]
+
+      maximum = zahlen[0]
+      summe = 0
+
+      for z in zahlen:
+          summe = summe + z
+          if z > maximum:
+              maximum = z
+
+      print("Maximum:", maximum)
+      print("Summe:", summe)
+      ```
+
+      </details>
+
+      ### Aufgabe 13.3 (5 Punkte)
+
+      Implementiere den Sortieralgorithmus Bubblesort, um die Liste
+      `zahlen = [5, 2, 9, 1, 6]` aufsteigend zu sortieren, und gib die sortierte
+      Liste aus.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      a = [5, 2, 9, 1, 6]
+
+      getauscht = True
+      while getauscht:
+          getauscht = False
+          for i in range(len(a)-1):
+              if a[i] > a[i+1]:
+                  a[i],a[i+1]=a[i+1],a[i]
+                  getauscht = True
+
+      print(a)
+      ```
+
+      </details>
+
+      ---
+
+      <a id="kompetenz-14"></a>
+
+      ## 14: Strategien (Debugger, schrittweise Ausführung, Logging) anwenden
+
+      ### Aufgabe 14.1 (4 Punkte)
+
+      Das folgende Programm soll die Summe aller _geraden_ Zahlen einer Liste berechnen, liefert aber ein falsches Ergebnis:
+
+      ```python
+      def summe_gerade(zahlen):
+          summe = 0
+          for i in range(len(zahlen)):
+              if zahlen[i] % 2 == 0:
+                  summe = zahlen[i]
+          return summe
+
+      liste = [3, 4, 7, 8, 10, 5]
+      print(summe_gerade(liste))
+      ```
+
+      Setze in Thonny einen Haltepunkt in der Zeile `summe = zahlen[i]` und starte den Debugger. Nutze _Schritt über_, um bei jedem Schleifendurchlauf die Werte von `i` und `summe` zu beobachten. Notiere den Verlauf, beschreibe den Fehler und gib die korrigierte Zeile an.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      Durchlauf i=0: zahlen[0]=3  (ungerade) -> summe bleibt 0
+      Durchlauf i=1: zahlen[1]=4  (gerade)   -> summe = 4
+      Durchlauf i=2: zahlen[2]=7  (ungerade) -> summe bleibt 4
+      Durchlauf i=3: zahlen[3]=8  (gerade)   -> summe = 8
+      Durchlauf i=4: zahlen[4]=10 (gerade)   -> summe = 10
+      Durchlauf i=5: zahlen[5]=5  (ungerade) -> summe bleibt 10
+
+      Fehler: summe wird bei jedem geraden Wert ueberschrieben statt
+      aufaddiert (Zeile: summe = zahlen[i])
+      Korrektur: summe += zahlen[i]
+      ```
+
+      </details>
+
+      ### Aufgabe 14.2 (5 Punkte)
+
+      Das folgende Programm soll den größten Wert einer Liste finden, bricht aber mit einer Fehlermeldung ab:
+
+      ```python
+      def maximum(zahlen):
+          max_wert = zahlen[0]
+          for i in range(1, len(zahlen) + 1):
+              if zahlen[i] > max_wert:
+                  max_wert = zahlen[i]
+          return max_wert
+
+      werte = [12, 45, 3, 67, 23]
+      print(maximum(werte))
+      ```
+
+      Starte das Programm im Thonny-Debugger und führe es schrittweise aus, bis der Fehler auftritt. Notiere anhand der Variablenanzeige, bei welchem Wert von `i` der Fehler entsteht, gib die Fehlermeldung an und korrigiere die Schleife.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      Debugger-Ausgabe (Schritt fuer Schritt):
+      i=1: zahlen[1]=45 > 12 -> max_wert=45
+      i=2: zahlen[2]=3  -> max_wert bleibt 45
+      i=3: zahlen[3]=67 > 45 -> max_wert=67
+      i=4: zahlen[4]=23 -> max_wert bleibt 67
+      i=5: IndexError: list index out of range
+
+      Fehler tritt bei i=5 auf, da range(1, len(zahlen)+1) bis 5 laeuft,
+      gueltige Indizes sind aber nur 0 bis 4 (len(zahlen)-1).
+      Korrektur: range(1, len(zahlen))
+      ```
+
+      </details>
+
+      ### Aufgabe 14.3 (5 Punkte)
+
+      Das folgende Programm soll rückwärts von `start` bis 1 zählen, bleibt aber hängen:
+
+      ```python
+      def countdown(start):
+          n = start
+          while n > 0:
+              print(n)
+              n = n
+          print("Start!")
+
+      countdown(5)
+      ```
+
+      Starte das Programm im Thonny-Debugger und nutze _Schritt über_, um bei jedem Schleifendurchlauf den Wert von `n` zu beobachten. Brich das Programm nach ein paar Durchläufen mit dem Stopp-Button ab. Notiere deine Beobachtung, erkläre die Ursache des Fehlers und gib die korrigierte Zeile an.
+
+      <details>
+      <summary>Lösung anzeigen</summary>
+
+      ```python
+      Schritt-fuer-Schritt-Beobachtung:
+      Durchlauf 1: n=5 (Ausgabe: 5) -> nach n = n bleibt n=5
+      Durchlauf 2: n=5 (Ausgabe: 5) -> n bleibt weiterhin 5
+      Durchlauf 3: n=5 (Ausgabe: 5) -> Wert aendert sich nie
+      -> Endlosschleife, da die Bedingung n > 0 nie falsch wird
+
+      Fehler: n = n veraendert den Wert von n nicht
+      Korrektur: n = n - 1  (bzw. n -= 1)
+      ```
+
+      </details>
+
+      ---
+    </script>
+    <!-- ============================================================
+     BIS HIER: Ende des Markdown-Inhalts.
+     ============================================================ -->
+
+    <div class="layout">
+      <nav id="toc"></nav>
+      <main id="content">Lädt…</main>
+    </div>
+
+    <script>
+      marked.setOptions({
+        breaks: true,
+        gfm: true,
+        highlight: function (code, lang) {
+          if (lang && hljs.getLanguage(lang)) {
+            return hljs.highlight(code, { language: lang }).value;
+          }
+          return hljs.highlightAuto(code).value;
+        },
+      });
+
+      const raw = document.getElementById("markdown-content").textContent;
+      const html = marked.parse(raw);
+      const contentEl = document.getElementById("content");
+      contentEl.innerHTML = html;
+
+      // Move the "Inhalt" list (first <ol> right after the intro) into the sidebar,
+      // and drop the inline heading/paragraph duplicate from main content.
+      const tocNav = document.getElementById("toc");
+      const headings = Array.from(contentEl.querySelectorAll("h2"));
+      const inhaltHeading = Array.from(contentEl.querySelectorAll("h2")).find(
+        (h) => h.textContent.trim() === "Inhalt",
+      );
+      if (inhaltHeading) {
+        const list = inhaltHeading.nextElementSibling;
+        const tocTitle = document.createElement("h2");
+        tocTitle.textContent = "Inhalt";
+        tocNav.appendChild(tocTitle);
+        if (list && list.tagName === "OL") {
+          tocNav.appendChild(list);
+        }
+        inhaltHeading.remove();
+      }
+
+      // Apply syntax highlighting to any code blocks marked's own highlight hook missed.
+      document.querySelectorAll("pre code").forEach((block) => {
+        hljs.highlightElement(block);
+      });
+    </script>
+  </body>
+</html>

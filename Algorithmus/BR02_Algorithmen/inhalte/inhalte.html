@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lerninhalte: Algorithmen mit Python</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+<style>
+  :root {
+    --accent: #2563eb;
+    --bg: #f7f8fa;
+    --card-bg: #ffffff;
+    --border: #e2e5ea;
+    --text: #1f2430;
+    --muted: #6b7280;
+    --code-bg: #f3f4f6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .layout {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  nav#toc {
+    flex: 0 0 260px;
+    padding: 32px 16px;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+  nav#toc h2 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    margin: 0 0 12px;
+  }
+  nav#toc ol {
+    padding-left: 1.1em;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  nav#toc li { margin-bottom: 8px; }
+  nav#toc a { color: var(--text); text-decoration: none; }
+  nav#toc a:hover { color: var(--accent); text-decoration: underline; }
+  main {
+    flex: 1;
+    min-width: 0;
+    background: var(--card-bg);
+    padding: 40px 48px 80px;
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+  }
+  main h1 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 12px;
+    margin-top: 0;
+  }
+  main h2 {
+    font-size: 1.35rem;
+    margin-top: 3em;
+    padding-top: 0.5em;
+    border-top: 1px solid var(--border);
+    color: var(--accent);
+  }
+  main h2:first-of-type { margin-top: 2em; border-top: none; }
+  main h3 {
+    font-size: 1.05rem;
+    margin-top: 2em;
+    color: var(--text);
+  }
+  main hr {
+    display: none;
+  }
+  p { margin: 0.9em 0; }
+  code {
+    background: var(--code-bg);
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  pre {
+    background: var(--code-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 16px;
+    overflow-x: auto;
+  }
+  pre code {
+    background: none;
+    padding: 0;
+    font-size: 0.88rem;
+  }
+  details {
+    margin: 1em 0 1.5em;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 4px 16px;
+    background: #fafbfc;
+  }
+  details[open] { border-color: var(--accent); }
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--accent);
+    padding: 10px 0;
+    list-style: none;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::before {
+    content: "▶ ";
+    display: inline-block;
+    transition: transform 0.15s ease;
+  }
+  details[open] summary::before { content: "▼ "; }
+  details > *:not(summary) { margin-top: 0.5em; }
+  @media (max-width: 800px) {
+    .layout { flex-direction: column; }
+    nav#toc {
+      position: static;
+      max-height: none;
+      border-bottom: 1px solid var(--border);
+    }
+    main { border-left: none; border-right: none; padding: 24px; }
+  }
+
+  .pagenav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 14px 48px 0;
+    font-size: 0.9rem;
+  }
+  .pagenav a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .pagenav a:hover { text-decoration: underline; }
+  @media (max-width: 800px) {
+    .pagenav { padding: 14px 24px 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="pagenav">📘 Lerninhalte &nbsp;|&nbsp; <a href="index.html">Zu den Übungsaufgaben →</a></div>
+
+<!-- ============================================================
+     AB HIER: Inhalt im Markdown-Format.
+     Hier kannst du Texte bearbeiten, löschen oder neue Abschnitte hinzufügen,
+     ohne HTML-Kenntnisse zu benötigen. Die Syntax ist normales Markdown:
+       ## Überschrift        -> Abschnitt
+       ```python ... ```     -> Codeblock
+       | ... | ... |          -> Tabelle
+     ============================================================ -->
+<script type="text/markdown" id="markdown-content">
+# Grundlagen: Algorithmen mit Python
+
+Diese Seite fasst die Inhalte zusammen, die du brauchst, um die [Übungsaufgaben](index.html) zu lösen.
+Lies hier nach, wenn du dir bei einem Begriff oder einer Syntax nicht sicher bist.
+
+## Inhalt
+
+1. [Anweisung, Bedingung, Schleife, Verzweigung](#kompetenz-1)
+2. [Datentypen](#kompetenz-2)
+3. [Logische Verknüpfungen](#kompetenz-3)
+4. [Zufallszahlen](#kompetenz-4)
+5. [Unterprogramme (Funktionen)](#kompetenz-5)
+6. [Fehlerarten](#kompetenz-6)
+7. [Code analysieren](#kompetenz-7)
+8. [Code anpassen](#kompetenz-8)
+9. [Programmbibliotheken (Module)](#kompetenz-9)
+10. [Benutzereingaben](#kompetenz-10)
+11. [Dateien lesen und schreiben](#kompetenz-11)
+12. [Arrays (Listen)](#kompetenz-12)
+13. [Grundlegende Array-Algorithmen](#kompetenz-13)
+14. [Debugging-Strategien](#kompetenz-14)
+
+---
+
+<a id="kompetenz-1"></a>
+## 1. Anweisung, Bedingung, Schleife, Verzweigung
+
+**Anweisung.** Eine Anweisung ist ein einzelner Arbeitsschritt, den der Computer ausführt, zum Beispiel eine Zuweisung: Ein Wert wird in einer Variablen gespeichert.
+
+```python
+a = 5
+b = a + 2
+print(b)
+```
+
+**Bedingung.** Eine Bedingung ist ein Ausdruck, der zu `True` oder `False` ausgewertet wird, meist mit Vergleichsoperatoren:
+
+| Operator | Bedeutung |
+| --- | --- |
+| `==` | gleich |
+| `!=` | ungleich |
+| `<`, `>` | kleiner, größer |
+| `<=`, `>=` | kleiner/größer gleich |
+
+```python
+x = 7
+print(x > 5)   # True
+print(x == 5)  # False
+```
+
+**Verzweigung.** Mit `if`, `elif` und `else` lässt du das Programm je nach Bedingung unterschiedliche Anweisungen ausführen. Wichtig: nach der Bedingung steht ein Doppelpunkt, der zugehörige Block ist eingerückt.
+
+```python
+if x > 10:
+    print("groß")
+elif x > 0:
+    print("klein, aber positiv")
+else:
+    print("negativ oder null")
+```
+
+**Schleife.** Eine Schleife wiederholt einen Block von Anweisungen.
+
+- `for`-Schleife: wiederholt für jedes Element einer Folge (oft `range(...)`).
+- `while`-Schleife: wiederholt, solange eine Bedingung wahr ist.
+
+```python
+for i in range(5):        # i = 0, 1, 2, 3, 4
+    print(i)
+
+n = 5
+while n > 0:
+    print(n)
+    n = n - 1
+```
+
+---
+
+<a id="kompetenz-2"></a>
+## 2. Datentypen
+
+Jeder Wert in Python hat einen Datentyp. Die vier grundlegenden Typen:
+
+| Typ | Python-Name | Beispiel |
+| --- | --- | --- |
+| Ganzzahl | `int` | `42` |
+| Gleitkommazahl | `float` | `3.14` |
+| Wahrheitswert | `bool` | `True`, `False` |
+| Zeichenkette | `str` | `"Hallo"` |
+
+Mit `type(wert)` kannst du den Datentyp einer Variablen abfragen:
+
+```python
+alter = 16
+groesse = 1.72
+name = "Lena"
+ist_schueler = True
+
+print(type(alter))         # <class 'int'>
+print(type(groesse))       # <class 'float'>
+```
+
+**Typumwandlung.** Mit `int(...)`, `float(...)` und `str(...)` wandelst du Werte in einen anderen Typ um:
+
+```python
+text = "42"
+zahl = int(text)      # str -> int
+zahl2 = str(zahl)      # int -> str
+```
+
+---
+
+<a id="kompetenz-3"></a>
+## 3. Logische Verknüpfungen
+
+Mehrere Bedingungen lassen sich mit `and` (UND), `or` (ODER) und `not` (NICHT) verknüpfen.
+
+| A | B | `A and B` | `A or B` | `not A` |
+| --- | --- | --- | --- | --- |
+| False | False | False | False | True |
+| False | True | False | True | True |
+| True | False | False | True | False |
+| True | True | True | True | False |
+
+```python
+x = 14
+if x >= 10 and x <= 20:
+    print("x liegt zwischen 10 und 20")
+
+if x % 2 == 0 or x % 3 == 0:
+    print("x ist durch 2 oder durch 3 teilbar")
+```
+
+Mit Klammern lässt sich die Reihenfolge der Auswertung festlegen, genau wie in der Mathematik.
+
+---
+
+<a id="kompetenz-4"></a>
+## 4. Zufallszahlen
+
+Zufallszahlen erzeugst du mit dem Modul `random` (siehe auch Abschnitt 9 zu Modulen):
+
+```python
+import random
+
+wurf = random.randint(1, 6)     # ganze Zahl von 1 bis 6 (beide inklusive)
+print(wurf)
+```
+
+Wichtige Funktionen aus `random`:
+
+- `random.randint(a, b)` – ganze Zufallszahl zwischen `a` und `b` (beide inklusive)
+- `random.random()` – Zufallszahl zwischen 0.0 und 1.0
+- `random.choice(liste)` – zufälliges Element aus einer Liste
+
+---
+
+<a id="kompetenz-5"></a>
+## 5. Unterprogramme (Funktionen)
+
+Ein Unterprogramm (in Python: **Funktion**) fasst Anweisungen unter einem Namen zusammen, damit man sie mehrfach aufrufen kann. Funktionen können **Parameter** (Eingabewerte) entgegennehmen und über `return` einen **Rückgabewert** liefern.
+
+```python
+def rechteck_flaeche(breite, hoehe):
+    return breite * hoehe
+
+ergebnis = rechteck_flaeche(4, 5)   # Aufruf mit Argumenten 4 und 5
+print(ergebnis)                     # 20
+```
+
+Wichtige Unterscheidung:
+
+- **Parameter** stehen in der Funktionsdefinition (`breite`, `hoehe`), **Argumente** sind die konkreten Werte beim Aufruf (`4`, `5`).
+- `return` gibt einen Wert an die Stelle zurück, von der die Funktion aufgerufen wurde – das ist etwas anderes als `print()`, das nur auf dem Bildschirm ausgibt.
+- Eine Funktion kann auch keinen Wert zurückgeben (dann liefert sie automatisch `None`).
+
+---
+
+<a id="kompetenz-6"></a>
+## 6. Fehlerarten
+
+Man unterscheidet Fehler nach zwei Kriterien:
+
+**Wann tritt der Fehler auf?**
+
+- *Compilerfehler* (in Python: wird schon beim Einlesen des Programms erkannt, bevor es läuft, z. B. fehlender Doppelpunkt)
+- *Laufzeitfehler* (tritt erst während der Ausführung auf, z. B. Division durch 0)
+
+**Was ist die Ursache?**
+
+- *Syntaktischer Fehler*: Verstoß gegen die Grammatik der Sprache (das Programm startet gar nicht)
+- *Semantischer Fehler*: Das Programm läuft fehlerfrei durch, tut aber inhaltlich das Falsche
+
+```python
+# Syntaktischer Fehler: Doppelpunkt fehlt
+if x > 3
+    print("groß")
+
+# Semantischer Fehler: Programm läuft, Ergebnis ist aber falsch
+endpreis = grundpreis + rabatt * grundpreis   # sollte "-" statt "+" sein
+```
+
+---
+
+<a id="kompetenz-7"></a>
+## 7. Code analysieren
+
+Um zu verstehen, was ein fremder Code tut, hilft es, ihn **Schritt für Schritt gedanklich auszuführen** (auch "Tracing" genannt):
+
+1. Lies den Code von oben nach unten.
+2. Notiere dir für jede Variable, welchen Wert sie nach jeder Zeile hat (z. B. in einer Tabelle).
+3. Verfolge bei Schleifen jeden Durchlauf einzeln.
+4. Überlege bei Verzweigungen, welcher Zweig tatsächlich ausgeführt wird.
+
+```python
+x = 1
+for i in range(4):
+    if i % 2 == 0:
+        x = x * 2
+    else:
+        x = x + 3
+# i=0: x=2   i=1: x=5   i=2: x=10   i=3: x=13
+```
+
+Diese Technik hilft dir auch später beim Debuggen (Abschnitt 14).
+
+---
+
+<a id="kompetenz-8"></a>
+## 8. Code anpassen
+
+Wenn du vorgegebenen Code veränderst, gehe systematisch vor:
+
+1. Verstehe zuerst, was der Code aktuell tut (siehe Abschnitt 7).
+2. Überlege, an welcher Stelle genau die gewünschte Änderung ansetzen muss.
+3. Ändere möglichst wenig – nur das, was nötig ist.
+4. Teste anschließend, ob der Code jetzt das Gewünschte tut.
+
+Typische Anpassungen sind zum Beispiel eine zusätzliche Bedingung in einer Schleife oder ein fehlender `elif`-Zweig:
+
+```python
+# vorher: gibt alle Zahlen aus
+for i in range(1, 11):
+    print(i)
+
+# nachher: gibt nur gerade Zahlen aus
+for i in range(1, 11):
+    if i % 2 == 0:
+        print(i)
+```
+
+---
+
+<a id="kompetenz-9"></a>
+## 9. Programmbibliotheken (Module)
+
+Python bringt viele fertige Funktionen in **Modulen** mit, die du per `import` einbindest:
+
+```python
+import math
+
+print(math.sqrt(144))       # Quadratwurzel
+print(round(math.pi, 4))    # Kreiszahl Pi, gerundet
+```
+
+Nützliche Module:
+
+- `math` – mathematische Funktionen (`sqrt`, `pi`, ...)
+- `random` – Zufallszahlen (siehe Abschnitt 4)
+- `datetime` – Datum und Uhrzeit
+
+Nach `import modulname` rufst du Funktionen des Moduls mit `modulname.funktion(...)` auf.
+
+---
+
+<a id="kompetenz-10"></a>
+## 10. Benutzereingaben
+
+Mit `input("Frage: ")` fragt dein Programm den Nutzer nach einer Eingabe. Wichtig: `input()` liefert **immer eine Zeichenkette (`str`)** zurück – Zahlen musst du selbst umwandeln.
+
+```python
+alter = int(input("Wie alt bist du? "))
+
+if alter >= 18:
+    print("Du bist volljährig.")
+else:
+    print("Du bist minderjährig.")
+```
+
+Eingaben lassen sich auch wiederholt abfragen, zum Beispiel mit einer `while`-Schleife, bis eine bestimmte Eingabe (z. B. `0`) erfolgt.
+
+---
+
+<a id="kompetenz-11"></a>
+## 11. Dateien lesen und schreiben
+
+Mit `open(...)` öffnest du eine Datei. Am einfachsten in Kombination mit `with`, damit die Datei automatisch wieder geschlossen wird:
+
+```python
+# schreiben
+with open("ausgabe.txt", "w") as datei:
+    datei.write("Hallo Welt")
+
+# lesen (zeilenweise)
+with open("eingabe.txt", "r") as datei:
+    for zeile in datei:
+        print(zeile.strip())
+```
+
+Wichtige Modi beim Öffnen:
+
+- `"w"` – schreiben (vorhandene Datei wird überschrieben)
+- `"r"` – lesen
+- `"a"` – anhängen (an vorhandene Datei anfügen)
+
+`zeile.strip()` entfernt den Zeilenumbruch am Ende jeder eingelesenen Zeile.
+
+---
+
+<a id="kompetenz-12"></a>
+## 12. Arrays (Listen)
+
+In Python heißen Arrays **Listen**. Eine Liste speichert mehrere Werte in einer festgelegten Reihenfolge.
+
+```python
+noten = [2, 3, 1, 4, 2]
+
+print(noten[0])     # erstes Element: 2
+print(noten[-1])    # letztes Element: 2
+print(len(noten))   # Anzahl der Elemente: 5
+```
+
+Wichtig: Die Zählung beginnt bei Index `0`. Mit `for wert in liste:` durchläufst du alle Elemente, mit `liste.append(wert)` fügst du ein neues Element am Ende hinzu.
+
+```python
+zahlen = [3, 7, 2, 9, 4]
+for i in range(len(zahlen)):
+    zahlen[i] = zahlen[i] * 2   # jedes Element verändern
+```
+
+---
+
+<a id="kompetenz-13"></a>
+## 13. Grundlegende Array-Algorithmen
+
+**Füllen mit Werten:** eine leere Liste per Schleife befüllen.
+
+```python
+werte = []
+for i in range(1, 11):
+    werte.append(i * i)
+```
+
+**Maximumsuche:** das größte Element ohne die Funktion `max()` finden – man merkt sich laufend den bisher größten Wert.
+
+```python
+maximum = zahlen[0]
+for z in zahlen:
+    if z > maximum:
+        maximum = z
+```
+
+**Summenbildung:** alle Elemente aufaddieren.
+
+```python
+summe = 0
+for z in zahlen:
+    summe = summe + z
+```
+
+**Bubblesort:** benachbarte Elemente werden verglichen und bei Bedarf vertauscht. Das wiederholt sich, bis beim Durchlauf nichts mehr getauscht wird – dann ist die Liste sortiert.
+
+```python
+a = [5, 2, 9, 1, 6]
+getauscht = True
+while getauscht:
+    getauscht = False
+    for i in range(len(a) - 1):
+        if a[i] > a[i + 1]:
+            a[i], a[i + 1] = a[i + 1], a[i]
+            getauscht = True
+```
+
+---
+
+<a id="kompetenz-14"></a>
+## 14. Debugging-Strategien
+
+Wenn ein Programm nicht das tut, was es soll, hilft gezieltes **Debugging** – das systematische Aufspüren von Fehlern.
+
+**Debugger (in Thonny):**
+
+1. Setze einen **Haltepunkt** (Breakpoint) an der Stelle, ab der du das Programm genauer beobachten willst.
+2. Starte das Programm im Debugger – es hält automatisch am Haltepunkt an.
+3. Nutze **Schritt über** (Step Over), um Zeile für Zeile weiterzugehen.
+4. Beobachte in der Variablenanzeige, wie sich die Werte der Variablen verändern.
+
+**Weitere Strategien:**
+
+- **Print-Debugging / Logging:** gezielt `print()`-Ausgaben in den Code einbauen, um Zwischenwerte sichtbar zu machen.
+- **Schrittweise Ausführung von Hand (Tracing):** wie in Abschnitt 7, den Code auf Papier durchgehen.
+
+Typische Fehlerquellen, die man so findet: eine Variable wird überschrieben statt aufaddiert, eine Schleife läuft einen Index zu weit (`IndexError`), oder eine Bedingung wird nie `False` (Endlosschleife).
+
+
+</script>
+<!-- ============================================================
+     BIS HIER: Ende des Markdown-Inhalts.
+     ============================================================ -->
+
+<div class="layout">
+  <nav id="toc"></nav>
+  <main id="content">Lädt…</main>
+</div>
+
+<script>
+  marked.setOptions({
+    breaks: true,
+    gfm: true,
+    highlight: function (code, lang) {
+      if (lang && hljs.getLanguage(lang)) {
+        return hljs.highlight(code, { language: lang }).value;
+      }
+      return hljs.highlightAuto(code).value;
+    }
+  });
+
+  const raw = document.getElementById('markdown-content').textContent;
+  const html = marked.parse(raw);
+  const contentEl = document.getElementById('content');
+  contentEl.innerHTML = html;
+
+  // Move the "Inhalt" list (first <ol> right after the intro) into the sidebar,
+  // and drop the inline heading/paragraph duplicate from main content.
+  const tocNav = document.getElementById('toc');
+  const headings = Array.from(contentEl.querySelectorAll('h2'));
+  const inhaltHeading = Array.from(contentEl.querySelectorAll('h2')).find(h => h.textContent.trim() === 'Inhalt');
+  if (inhaltHeading) {
+    const list = inhaltHeading.nextElementSibling;
+    const tocTitle = document.createElement('h2');
+    tocTitle.textContent = 'Inhalt';
+    tocNav.appendChild(tocTitle);
+    if (list && list.tagName === 'OL') {
+      tocNav.appendChild(list);
+    }
+    inhaltHeading.remove();
+  }
+
+  // Apply syntax highlighting to any code blocks marked's own highlight hook missed.
+  document.querySelectorAll('pre code').forEach((block) => {
+    hljs.highlightElement(block);
+  });
+</script>
+
+</body>
+</html>
