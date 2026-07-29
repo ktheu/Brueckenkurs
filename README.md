@@ -75,7 +75,7 @@
 
 ------------------------
 
-- [Algorithmen](./BR02_Algorithmen/inhalte/inhalte.html) 
+- [Test](./Test/inhalte/datenUndCodierung.md) 
 
 <!-- - [Klausur](./2025-26-Brue_2-A_loes.pdf) -->
 
