@@ -53,7 +53,7 @@ Die beiden Einheiten werden manchmal mit derselben Abkürzung benutzt, was zu Ve
 
 <img src='bild3.png' alt='16GB USB-Stick' width='300'/>
 
-16 Gigabyte $\approx$  14,9 Gibibyte.  
+16 Gigabyte ≈ 14,9 Gibibyte.  
 
 
 Manchmal wird Bit mit kleinem 'b' und Byte mit großem 'B' abgekürzt. Bei Datenraten finden sich  folgende Einheiten:
@@ -74,9 +74,9 @@ Mbps = Mbit/s = MegaBit per second
 
 Der Wert einer Ziffer hängt von der Stelle in der Zahl ab. Solche Zahlsysteme nennt man **Stellenwertsysteme**. Zu Binärzahlen sagt man häufig auch **Dualzahlen**. 
 
-$(4719)_{10} =   9 \cdot 10^0 + 1 \cdot 10^1 + 7 \cdot 10^2 + 4 \cdot 10^3$ <br>
-$(10010)_{2} =   0 \cdot 2^0 + 1 \cdot 2^1 + 0 \cdot 2^2 + 0 \cdot 2^3 + 1 \cdot 2^4 = (18)_{10}$ <br>
-$(\mathtt{E52F})_{16} =  15 \cdot 16^0 + 2 \cdot 16^1 + 5 \cdot 16^2 + 14 \cdot 16^3 = (58671)_{10}$
+(4719)<sub>10</sub> = 9 × 10<sup>0</sup> + 1 × 10<sup>1</sup> + 7 × 10<sup>2</sup> + 4 × 10<sup>3</sup> <br>
+(10010)<sub>2</sub> = 0 × 2<sup>0</sup> + 1 × 2<sup>1</sup> + 0 × 2<sup>2</sup> + 0 × 2<sup>3</sup> + 1 × 2<sup>4</sup> = (18)<sub>10</sub> <br>
+(E52F)<sub>16</sub> = 15 × 16<sup>0</sup> + 2 × 16<sup>1</sup> + 5 × 16<sup>2</sup> + 14 × 16<sup>3</sup> = (58671)<sub>10</sub>
 
 #### Vierergruppen
 
