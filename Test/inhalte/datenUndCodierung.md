@@ -5,7 +5,7 @@
 ### Inhalt
 
 1. [Information und Daten, Bits und Bytes](#1-information-und-daten-bits-und-bytes)
-2. [Zahlensysteme umrechnen](#2-zahlensysteme-umrechnen-binär-hexadezimal-dezimal)
+2. [Zahlensysteme umrechnen](#2-zahlsysteme-dezimal-binär-hexadezimal)
 3. [Datenreduktion bei Bild und Ton](#3-datenreduktion-bei-bild-und-ton)
 4. [Lauflängencodierung (RLE)](#4-lauflängencodierung-rle--verlustfrei-komprimieren)
 5. [Verlustbehaftet vs. verlustfrei](#5-verlustbehaftete-vs-verlustfreie-kompression)
@@ -14,106 +14,147 @@
 
 ### 1. Information und Daten, Bits und Bytes
 
+#### Information und Daten
+
 **Information** muss immer in geeigneter Weise dargestellt werden, um sie als **Daten** maschinell weiterverarbeiten zu können. Aus Daten gewinnt man erst dann Information, wenn sie gedeutet werden können.
 
 <img src="bild1.png" alt="Information und Daten" width="300"/>
 
-### 2. Zahlensysteme umrechnen: Binär, Hexadezimal, Dezimal
+#### Bit und Byte
 
-Computer speichern alles als Bits (0/1). Weil lange Bitfolgen unübersichtlich sind, fasst man sie zu **Vierergruppen** zusammen und schreibt sie hexadezimal.
+Zur Darstellung von Information nutzt man häufig Systeme, die nur zwei Zustände einnehmen können: 
+ an/aus; geladen/ungeladen; Strom fließt/Strom fließt nicht; magnetisiert/unmagnetisiert.
 
-#### A · Binär → Dezimal (Stellenwerte addieren)
+Unter einem **Bit** versteht man eine Einheit zur Informationsdarstellung, die nur zwei Werte annehmen kann. In der Regel beschreiben wir die beiden Zustände mit den Ziffern 0 und 1. Unter einem **Byte** versteht man eine Einheit aus 8 Bit. (Hinweis: Bei Mengenangaben sagt man Bit und nicht Bits. Also 8 Bit, nicht 8 Bits.)
 
-Jede Bitstelle hat einen Stellenwert, der von rechts nach links mit der Basis 2 potenziert wird (…, 2³, 2², 2¹, 2⁰). Man multipliziert jede Ziffer (0 oder 1) mit ihrem Stellenwert und addiert alles.
+Werden die Daten nur mit Bits dargestellt spricht man von **Binärdarstellung der Daten**. 
 
-Beispiel 10110101 (Bin) → Dezimal:
+#### Einheiten für Datenmengen
+
 ```
-10110101 binär = 1*2^7 + 0*2^6 + 1*2^5 + 1*2^4 + 0*2^3 + 1*2^2 + 0*2^1 + 1*2^0
-         = 128 + 0 + 32 + 16 + 0 + 4 + 0 + 1 = 181
-```
-
-#### B · Hexadezimal → Dezimal (Stellenwerte addieren)
-
-Genauso wie bei Binär, nur mit der Basis 16: Jede Stelle wird von rechts nach links mit ihrem Stellenwert (16⁰, 16¹, 16², …) multipliziert; die Ergebnisse werden addiert.
-
-Beispiel D6B (Hex) → Dezimal:
-```
-D=13   6   B=11
-13·16² + 6·16¹ + 11·16⁰
-= 3328 + 96 + 11 = 3435
+    1 Byte                8 Bit     
+    1 Kilobyte (KB)    1000 Byte    
+    1 Megabyte (MB)    1000 KB      
+    1 Gigabyte (GB)    1000 MB   
+    1 Terabyte (TB)    1000 GB
 ```
 
-#### C · Binär → Dezimal über Hexadezimal
+Die folgenden Einheiten bauen auf Zweierpotenzen statt auf Zehnerpotenzen auf:
 
-Statt eine Binärzahl direkt über 2er-Potenzen umzurechnen (siehe A), kann man sie auch zunächst in Hexadezimal umwandeln und anschließend wie in B in Dezimal umrechnen.
+```
+    1 Byte                8 Bit
+    1 Kibibyte (KiB)   1024 Byte
+    1 Mebibyte (MiB)   1024 KiB
+    1 Gibibyte (GiB)   1024 MiB
+    1 Tebibyte (TiB)   1024 GiB
+```
+ 
+Die beiden Einheiten werden manchmal mit derselben Abkürzung benutzt, was zu Verwirrung führen kann. Ein 16GB USB-Stick wird im Windows Explorer so angezeigt:
 
-**Verfahren für Binär → Hexadezimal (Vierergruppen bilden):**
-1. Bitfolge von rechts in Blöcke zu je 4 Bit einteilen, ggfs. links mit Nullen auffüllen.
-2. Jeden 4er-Block einzeln in seine Hexziffer übersetzen (Tabelle unten).
-3. Die Hexziffern in der gleichen Reihenfolge aneinanderreihen.
+<img src='bild3.png' alt='16GB USB-Stick' width='300'/>
 
-| Bin  | Hex | Bin  | Hex | Bin  | Hex | Bin  | Hex |
-| ---- | --- | ---- | --- | ---- | --- | ---- | --- |
-| 0000 | 0   | 0100 | 4   | 1000 | 8   | 1100 | C   |
-| 0001 | 1   | 0101 | 5   | 1001 | 9   | 1101 | D   |
-| 0010 | 2   | 0110 | 6   | 1010 | A   | 1110 | E   |
-| 0011 | 3   | 0111 | 7   | 1011 | B   | 1111 | F   |
+16 Gigabyte $\approx$  14,9 Gibibyte.  
+
+
+Manchmal wird Bit mit kleinem 'b' und Byte mit großem 'B' abgekürzt. Bei Datenraten finden sich  folgende Einheiten:
+
+```
+Mbps = Mbit/s = MegaBit per second
+```
+
+### 2. Zahlsysteme: Dezimal, Binär, Hexadezimal 
+
+#### Stellenwertsysteme
+
+```
+    Dezimalzahlen:     10 Ziffern: 0,1,2,...9                4719
+    Binärzahlen:         2 Ziffern: 0,1                       10010 
+    Hexadezimalzahlen: 16 Ziffern: 0,1,2,...9,A,B,C,D,E,F    E52F 
+```
+
+Der Wert einer Ziffer hängt von der Stelle in der Zahl ab. Solche Zahlsysteme nennt man **Stellenwertsysteme**. Zu Binärzahlen sagt man häufig auch **Dualzahlen**. 
+
+$(4719)_{10} =   9 \cdot 10^0 + 1 \cdot 10^1 + 7 \cdot 10^2 + 4 \cdot 10^3$ <br>
+$(10010)_{2} =   0 \cdot 2^0 + 1 \cdot 2^1 + 0 \cdot 2^2 + 0 \cdot 2^3 + 1 \cdot 2^4 = (18)_{10}$ <br>
+$(\mathtt{E52F})_{16} =  15 \cdot 16^0 + 2 \cdot 16^1 + 5 \cdot 16^2 + 14 \cdot 16^3 = (58671)_{10}$
+
+#### Vierergruppen
+
+Binär kodierte Daten lassen sich übersichtlicher mit hexadezimalen Ziffern schreiben. Wir fassen dazu Vierergruppen zusammen.
+
+
+```
+    Binär:  0000 0001 0010 0011 0100 0101 0110 0111 1000 1001 1010 1011 1100 1101 1110 1111
+    Hex:     0    1    2    3    4    5    6    7    8    9    A    B    C    D    E    F
+```
+
+```
+    101011110111000101010000101111000011110101100100010101
+    Von rechts in Vierergruppen aufteilen, links ggf. mit 0 auffüllen.
+    0010 1011 1101 1100 0101 0100 0010 1111 0000 1111 0101 1001 0001 0101
+      2    B    D    C    5    4    2    F    0    F    5    9    1    5
+```
+
+
+#### Binär → Dezimal über Hexadezimal
+
+Statt eine Binärzahl direkt über 2er-Potenzen umzurechnen, kann man sie auch zunächst in Hexadezimal umwandeln und anschließend in Dezimal umrechnen.
 
 Beispiel: `10110101110` (Bin) → Dezimal, über Hex
 
 ```
 Binär in 4er-Blöcke: 101  1010  1110
-Hexadezimal:           5    A     E    = 5AE
+Hexadezimal:           5    A     E  
 Dezimal:             14*16^0 + 10*16^1 + 5*16^2 = 14 + 160 + 1280 = 1454
 ```
 
-Zur Kontrolle der direkte Weg (A) für dieselbe Zahl:
+Zur Kontrolle der direkte Weg für dieselbe Zahl:
 ```
 10110101110 binär = 1*2^1 + 1*2^2 + 1*2^3 + 1*2^5 + 1*2^7 + 1*2^8 + 1*2^10
                    = 2 + 4 + 8 + 32 + 128 + 256 + 1024 = 1454
 ```
 
-Beide Wege führen auf dasselbe Ergebnis — das ist eine gute Möglichkeit, das eigene Ergebnis zu kontrollieren.
 
-> **Tipp:** Stimmen die beiden Ergebnisse nicht überein, liegt meist ein Rechenfehler bei den Stellenwerten (A/B) oder ein falsch gebildeter 4er-Block vor — dann lohnt es sich, beide Rechnungen noch einmal Schritt für Schritt zu vergleichen.
+#### Umrechnung Dezimalzahl in Dualzahl
 
-#### D · Dezimal → Binär (fortgesetzte Division)
+Beobachtung bei Dualzahlen
 
-Das im Unterricht verwendete Verfahren: Immer wieder durch 2 teilen, den **Rest** notieren, mit dem **ganzzahligen Ergebnis** weiterrechnen — bis 0 übrig bleibt. Die Reste **von unten nach oben** gelesen ergeben die Zahl.
+<img src="bild4.png" alt="Umrechnung Dezimalzahl in Dualzahl" width="600"/>
 
-Beispiel: 177 → Binär
+
+Bei der ganzzahligen Division durch 2 verschwindet die rechte Ziffer. <br>
+Bei der Multiplikation mit 2 kommt rechts noch eine 0 dran.
+
+
+Bei gegebener Dezimalzahl x können wir die rechte Ziffer der Dualzahl leicht erkennen. Wir dividieren x ganzzahlig durch 2 und bestimmen auf die gleiche Art die restlichen Ziffern. 
+
+
+<img src="bild5.png" alt="Umrechnung Dezimalzahl in Dualzahl" width="600"/>
+
+Unter die Zahl notieren wir das Ergebnis bei ganzzahliger Division durch 2. Daneben den Rest. 
+Das wiederholen wir solange bis wir bei 0 angekommen sind. 
+Die Reste von unten nach oben gelesen ergeben die binäre Darstellung.
+
+Beispiel: Wandle 52 in eine Dualzahl um:
+
 ```
-177 : 2 = 88 Rest 1
- 88 : 2 = 44 Rest 0
- 44 : 2 = 22 Rest 0
- 22 : 2 = 11 Rest 0
- 11 : 2 =  5 Rest 1
-  5 : 2 =  2 Rest 1
-  2 : 2 =  1 Rest 0
-  1 : 2 =  0 Rest 1
+     52
+     26   0
+     13   0
+      6   1
+      3   0
+      1   1
+      0   1
 
-von unten nach oben gelesen: 10110001
+Ergebnis: 110100
+
 ```
 
-#### E · Dezimal → Hexadezimal (fortgesetzte Division)
+Übung:   <br>
+1. Wie heißt die Dezimalzahl 90 als Dualzahl?    <br>
+2. Wie heißt die Dezimalzahl 3627 als Hexadezimalzahl?
 
-Gleiches Verfahren wie in D, nur wird durch 16 statt durch 2 geteilt.
-
-Beispiel: 2749 → Hexadezimal
-```
-2749 : 16 = 171 Rest 13 = D
- 171 : 16 =  10 Rest 11 = B
-  10 : 16 =   0 Rest 10 = A
-
-von unten nach oben gelesen: ABD
-```
-
-> **Typische Fehler (D, E):**
-> - Reste werden in der falschen Reihenfolge notiert — *von unten nach oben* lesen, nicht von oben nach unten!
-> - Bei Hex-Resten über 9 an die Buchstaben A–F denken (10=A … 15=F).
-> - Bei Bin→Hex Blöcke immer von rechts bilden; bei einer ungeraden Bitanzahl links mit Nullen auffüllen.
-
----
+ 
 
 ### 3. Datenreduktion bei Bild und Ton
 
@@ -172,7 +213,7 @@ RLE lohnt sich nur, wenn viele gleiche Werte *direkt hintereinander* stehen — 
 
 ---
 
-### 4. Verlustbehaftete vs. verlustfreie Kompression
+### 5. Verlustbehaftete vs. verlustfreie Kompression
 
 Die entscheidende Frage: **Muss nach dem Entpacken exakt das Original wiederhergestellt werden — oder darf ein kleiner, kaum wahrnehmbarer Unterschied entstehen?**
 
