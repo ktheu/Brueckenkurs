@@ -5,7 +5,7 @@
 ### Inhalt
 
 1. [Information und Daten, Bits und Bytes](#1-information-und-daten-bits-und-bytes)
-2. [Zahlensysteme umrechnen](#2-zahlsysteme-dezimal-binär-hexadezimal)
+2. [Zahlsysteme Dezimal, Binär, Hexadezimal](#2-zahlsysteme-dezimal-binär-hexadezimal)
 3. [Datenreduktion bei Bild und Ton](#3-datenreduktion-bei-bild-und-ton)
 4. [Lauflängencodierung (RLE)](#4-lauflängencodierung-rle--verlustfrei-komprimieren)
 5. [Verlustbehaftet vs. verlustfrei](#5-verlustbehaftete-vs-verlustfreie-kompression)

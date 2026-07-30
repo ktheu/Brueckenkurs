@@ -75,7 +75,7 @@
 
 ------------------------
 
-- [Test](./Test/inhalte/datenUndCodierung.md) 
+- [Test](./Test/inhalte/01BitsUndBytes.ipynb)
 
 <!-- - [Klausur](./2025-26-Brue_2-A_loes.pdf) -->
 
