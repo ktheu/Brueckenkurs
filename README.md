@@ -75,7 +75,7 @@
 
 ------------------------
 
-- [Test](https://github.com/ktheu/Brueckenkurs/blob/main/BitsUndBytes/bitsUndbytes.ipynb)
+- [Test](https://github.com/ktheu/Brueckenkurs/blob/main/Test/inhalte/01BitsUndBytes.ipynb)
 
 <!-- - [Klausur](./2025-26-Brue_2-A_loes.pdf) -->
 
