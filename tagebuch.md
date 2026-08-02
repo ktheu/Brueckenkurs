@@ -25,4 +25,5 @@
 - 12.06.2026: Daten und Codierung: Fehlererkennende Codierungen, Hamming-Code 
 - 19.06.2026: Daten und Codierung: Codierung von Bildern und Audio, Übungen dazu
 - 03.07.2026: Algorithmen: Collatz-Algorithmus, Pledge-Algorithmus, klassischer Euklidscher Algorithmus (noch ohne Beweis) 
+- 10.07.2026: klassischer und moderner Euklidscher Algorithmus, Implmentierung in Python, Übungen dazu  
 
